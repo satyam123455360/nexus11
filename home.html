@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus 11 | Enterprise Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/N11-logo.ico">
+</head>
+<body>
+
+    <!-- Layer 1: Parallax Image -->
+    <div id="parallax-backdrop"></div>
+    
+    <!-- Layer 1.5: Volumetric Godrays -->
+    <div class="godray-container">
+        <div class="godray ray-1"></div>
+        <div class="godray ray-2"></div>
+        <div class="godray ray-3"></div>
+    </div>
+    
+    <!-- Layer 2: Abstract Mesh Overlay -->
+    <div class="animated-fallback-mesh"></div>
+    
+    <!-- Layer 3: Vignette Edge Darkening -->
+    <div class="vignette-overlay"></div>
+
+
+    <!-- Full-Width Fixed Navigation -->
+<header class="fixed-nav-wrapper">
+        <div class="top-nav">
+            <div class="brand-logo">
+                <!-- Replace src with your actual transparent logo file -->
+                <img src="assets/N11-logo.png" alt="Nexus 11" class="brand-logo-img">
+                <span>Nexus 11</span>
+            </div>
+            <nav class="nav-pills">
+                <a class="active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="sdg_11.html"><i class="fa-solid fa-city"></i> SDG_11</a>
+                <a href="ideas.html"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
+                <a href="metrics.html"><i class="fa-solid fa-chart-line"></i> Metrics</a>
+            </nav>
+            <div class="nav-actions">
+                <!-- Fluent Glass Clock -->
+                <div class="fluent-clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display" class="data-mono">00:00:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Hero Section (100vh) -->
+        <div class="hero-wrapper">
+            
+            <!-- Relocated Top-Left Scroll Indicator (Fluent Drop) -->
+            <div class="hero-top-left-scroll">
+                <div class="scroll-pill fluent-glass-panel">
+                    <div class="scroll-drop-node">
+                        <div class="scroll-drop-dot"></div>
+                    </div>
+                    <span>SCROLL DOWN</span>
+                </div>
+            </div>
+
+            <main class="hero-section">
+                <div class="fluent-badge mb-4">Infrastructure Intelligence</div>
+                <h1 class="hero-typography">
+                    Sustainable Cities.
+                    <br><span class="text-gradient">Zero-Loss Resilience.</span>
+                </h1>
+
+                <p class="hero-subtext">Predictive modeling for urban expansion and equitable living. A seamless, real-time analytics engine built for the modern grid.</p>
+            </main>
+
+            <!-- Bottom shelf cleaned up -->
+            <footer class="bottom-shelf" style="display: none;"></footer>
+        </div>
+
+        <!-- Expanded Analytics Content -->
+        <div class="fluent-seamless-wrapper">
+            <div class="fluent-ambient-light light-1"></div>
+            <div class="fluent-ambient-light light-2"></div>
+<!-- ==========================================
+                 CIVIC VECTOR BLUEPRINTS (FULL WIDTH)
+                 ========================================== -->
+            <section class="fluent-smooth-section vector-blueprint-section">
+                <div class="fluent-clean-header" style="margin-bottom: 40px;">
+                    <h2>Civic Infrastructure Schematics</h2>
+                    <p>High-fidelity, hardware-accelerated vector mapping of planetary grids.</p>
+                </div>
+
+                <!-- Non-rounded, edge-to-edge, non-interactive panel -->
+                <div class="fluent-glass-panel vector-panel">
+                    <div class="vector-strip">
+                        <!-- Abstract Structural Vectors -->
+                        <img src="https://cdn.pixabay.com/photo/2026/06/20/14/41/mohamed_hassan-jungle-10341915_640.png" alt="Node Alpha">
+                        <img src="https://cdn.vectorstock.com/i/500p/55/79/night-city-skyline-vector-8255579.jpg" alt="Node Beta">
+                        <img src="https://img.magnific.com/free-vector/desert-canyon-road-sunset_1308-165502.jpg?semt=ais_hybrid&w=740&q=80" alt="Node Gamma">
+                        <img src="https://img.magnific.com/free-vector/modern-night-city-landscape-vector-background_1441-2835.jpg?semt=ais_hybrid&w=740&q=80" alt="Node Delta">
+                    </div>
+                    <!-- Smooth fade blending the edges into the background -->
+                    <div class="vector-fade-edges"></div>
+                </div>
+            </section>
+
+            <section class="fluent-smooth-section">
+                <div class="fluent-clean-header">
+                    <h2>Telemetry Pipeline</h2>
+                    <p>High-fidelity data aggregation and real-time synthesis.</p>
+                </div>
+
+                <div class="fluent-card-grid">
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon">01</div>
+                        <h4>Global Ingestion</h4>
+                        <p>Extraction of atmospheric and transit vectors from Copernicus and Open-Meteo arrays.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon">02</div>
+                        <h4>Data Processing</h4>
+                        <p>Backend analytics pipeline engineered to clean, interpolate, and format raw JSON telemetry.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon">03</div>
+                        <h4>SQL Aggregation</h4>
+                        <p>Relational database architecture built to store and analyze historical performance targets.</p>
+                    </div>
+                </div>
+            </section>
+
+<!-- Full-Width Fluent Footer -->
+        <footer class="fluent-master-footer">
+            <div class="footer-inner-content">
+                
+                <!-- Left: Branding & Core Info -->
+                <div class="footer-brand-column">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
+                        <span>Nexus 11</span>
+                    </div>
+                    <p class="footer-tagline">Advanced urban telemetry and SDG 11 infrastructure intelligence engine built for sustainable civic scaling.</p>
+                    <div class="footer-version data-mono">SYSTEM_ONLINE // SDG_11</div>
+                </div>
+
+                <!-- Right: All Four Ecosystem Logos -->
+                <div class="footer-ecosystem-column">
+                    <div class="ecosystem-group">
+                        <span class="ecosystem-label">Ecosystem Partners</span>
+                        <div class="logo-badge-grid">
+                            <!-- AICTE Badge -->
+                            <div class="fluent-glass-panel partner-badge" title = "AICTE">
+                                <img src="assets/aicte-logo.png" alt="AICTE" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">AICTE</span>
+                            </div>
+                            <!-- IBM SkillsBuild Badge -->
+                            <div class="fluent-glass-panel partner-badge" title = "IBM SkillsBuild">
+                                <img src="assets/ibm-skillsbuild-logo.png" alt="IBM SkillsBuild" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">IBM SkillsBuild</span>
+                            </div>
+                            <!-- 1M1B Badge -->
+                            <div class="fluent-glass-panel partner-badge" title = "1M1B">
+                                <img src="assets/1m1b-logo.png" alt="1M1B" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">1M1B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- Premium Auth Modal -->
+    <div id="api-modal" class="modal-overlay">
+        <div class="fluent-glass-panel modal-panel">
+            <h3>Authenticate Engine</h3>
+            <p>Connect your analytics key to enable live generative processing.</p>
+            <input type="password" id="api-key-input" class="glass-input" placeholder="API Key..." autocomplete="off">
+            <div class="modal-actions">
+                <button id="cancel-api" class="glass-btn-secondary">Cancel</button>
+                <button id="save-api" class="glass-btn-primary">Authorize</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

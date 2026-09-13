@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus 11 | SDG 11 Deep Dive</title>
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- SDG 11 Specific Styles (Tricolor Theme) -->
+    <link rel="stylesheet" href="sdg_11.css">
+    
+    <!-- Precision Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Lenis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/N11-logo.ico">
+</head>
+<body class="sdg-body">
+
+    <!-- Custom Tricolor Ambient Mesh (Saffron, Aqua, Emerald) -->
+    <div class="tricolor-ambient-mesh">
+        <div class="mesh-orb orb-saffron"></div>
+        <div class="mesh-orb orb-aqua"></div>
+        <div class="mesh-orb orb-emerald"></div>
+    </div>
+    
+    <!-- Subtle Grid Overlay for texture -->
+    <div class="subtle-noise-overlay" style="z-index: 1;"></div>
+
+    <!-- Full-Width Fixed Navigation -->
+    <header class="fixed-nav-wrapper">
+        <div class="top-nav">
+            <div class="brand-logo">
+                <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
+                <span>Nexus 11</span>
+            </div>
+            
+            <nav class="nav-pills">
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a class="active"><i class="fa-solid fa-city"></i> SDG_11</a>
+                <a href="ideas.html"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
+                <a href="metrics.html"><i class="fa-solid fa-chart-line"></i> Metrics</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="fluent-clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display" class="data-mono">00:00:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        
+        <!-- Hero Section -->
+        <main class="sdg-hero">
+            <div class="fluent-badge mb-4"><i class="fa-solid fa-globe"></i> UN AGENDA 2030</div>
+            <h1 class="hero-typography">
+                Sustainable Cities & Communities.
+                <br><span class="text-gradient">The Foundation of SDG 11.</span>
+            </h1>
+            <p class="hero-subtext" style="max-width: 800px;">
+                SDG 11 is a core pillar of the United Nations' 2030 Agenda for Sustainable Development. The ultimate objective is to make cities and human settlements <strong>inclusive, safe, resilient, and sustainable</strong>, addressing the immense challenges and opportunities of planetary urbanization.
+            </p>
+        </main>
+
+        <div class="fluent-seamless-wrapper sdg-wrapper">
+
+            <!-- Targets Grid Section -->
+            <section class="fluent-smooth-section">
+                <div class="fluent-clean-header">
+                    <h2><i class="fa-solid fa-bullseye highlight-text"></i> Global Targets for 2030</h2>
+                    <p>The definitive benchmarks required to establish a sustainable urban future.</p>
+                </div>
+
+                <div class="fluent-card-grid">
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon"><i class="fa-solid fa-train"></i></div>
+                        <h4>Sustainable Transport</h4>
+                        <p>Ensure access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety with special attention to vulnerable populations.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h4>Inclusive Urbanization</h4>
+                        <p>Enhance inclusive and sustainable urbanization and capacity for participatory, integrated, and sustainable human settlement planning and management.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon"><i class="fa-solid fa-monument"></i></div>
+                        <h4>Heritage Protection</h4>
+                        <p>Strengthen efforts to protect and safeguard the world’s cultural and natural heritage, crucial for maintaining community identity and history.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon"><i class="fa-solid fa-smog"></i></div>
+                        <h4>Environmental Impact</h4>
+                        <p>Reduce the adverse per capita environmental impact of cities, paying special attention to air quality and municipal waste management algorithms.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon"><i class="fa-solid fa-house-tsunami"></i></div>
+                        <h4>Disaster Resilience</h4>
+                        <p>Significantly reduce deaths and economic losses caused by disasters (including water-related), protecting the poor and vulnerable.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <div class="clean-icon"><i class="fa-solid fa-tree"></i></div>
+                        <h4>Green Public Spaces</h4>
+                        <p>Provide universal access to safe, inclusive, and accessible, green, and public spaces, focusing on women, children, older persons, and those with disabilities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Indicators Section -->
+            <section class="fluent-smooth-section">
+                <div class="fluent-clean-header">
+                    <h2><i class="fa-solid fa-chart-pie highlight-text"></i> Monitoring Indicators</h2>
+                    <p>The quantitative metrics used to track planetary progress toward SDG 11.</p>
+                </div>
+
+                <div class="fluent-glass-panel" style="padding: 40px;">
+                    <div class="indicator-grid">
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.1.2</span>
+                            <p>Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.2.1</span>
+                            <p>Proportion of population living in cities covered by a publicly accessible space for sports, recreation, and leisure.</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.3.1</span>
+                            <p>Ratio of land consumption rate to population growth rate.</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.4.1</span>
+                            <p>Total municipal solid waste generated per capita.</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.5.2</span>
+                            <p>Direct economic loss attributed to disasters in relation to global gross domestic product (GDP).</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.6.2</span>
+                            <p>Annual mean levels of fine particulate matter (PM2.5 and PM10) in cities.</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.7.1</span>
+                            <p>Average share of the built-up area of cities that is open space for public use for all.</p>
+                        </div>
+                        <div class="indicator-item">
+                            <span class="indicator-badge data-mono">11.b.1</span>
+                            <p>Proportion of local governments that adopt and implement local disaster risk reduction strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Importance & Challenges Split -->
+            <section class="fluent-smooth-section">
+                <div class="fluent-glass-panel" style="padding: 60px;">
+                    <div class="split-list-panel">
+                        
+                        <!-- Left: Challenges -->
+                        <div class="list-group">
+                            <h3><i class="fa-solid fa-triangle-exclamation" style="color: #facc15;"></i> Urban Challenges</h3>
+                            <div class="list-item">
+                                <h4>Rapid Urbanization</h4>
+                                <p>Many cities, particularly in developing countries, are growing rapidly, severely straining existing infrastructure and civic services.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Inequality</h4>
+                                <p>Urban areas often exhibit significant, deep-rooted disparities in access to essential services and economic opportunities.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Environmental Degradation</h4>
+                                <p>Cities act as major catalysts for environmental crises, driving intense air pollution and unsustainable waste generation.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Disaster Risk</h4>
+                                <p>Concentrated urban populations remain highly vulnerable to natural disasters, which can inflict devastating human and infrastructure impacts.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right: Importance -->
+                        <div class="list-group">
+                            <h3><i class="fa-solid fa-shield-heart" style="color: #10b981;"></i> Why It Matters</h3>
+                            <div class="list-item">
+                                <h4>Planetary Urbanization</h4>
+                                <p>With over half the world's population centralized in cities, urban resilience is an absolute prerequisite for global sustainable development.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Inclusivity & Equity</h4>
+                                <p>Inclusive infrastructure guarantees equal access to services, unlocking opportunities for all residents regardless of socioeconomic background.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Safety and Resilience</h4>
+                                <p>Fortifying cities protects dense populations from climate shocks, economic instability, and natural hazard events.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Economic Engine</h4>
+                                <p>Sustainable urban design acts as a massive economic driver, establishing new green jobs and stabilizing overall national development.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Strategies Section -->
+            <section class="fluent-smooth-section">
+                <div class="fluent-clean-header">
+                    <h2><i class="fa-solid fa-chess-knight highlight-text"></i> Execution Strategies</h2>
+                    <p>Coordinated efforts to achieve the SDG 11 framework.</p>
+                </div>
+
+                <div class="fluent-card-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="fluent-glass-panel arch-card">
+                        <h4 style="color: #10b981;"><i class="fa-solid fa-map-location-dot mb-2"></i><br>Integrated Planning</h4>
+                        <p>Developing comprehensive urban blueprints that unite transportation, housing, and public space ecosystems.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <h4 style="color: #10b981;"><i class="fa-solid fa-users-gear mb-2"></i><br>Participatory Governance</h4>
+                        <p>Involving citizens and vulnerable demographic groups directly in systemic decision-making processes.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <h4 style="color: #10b981;"><i class="fa-solid fa-bridge-water mb-2"></i><br>Infrastructure Investment</h4>
+                        <p>Deploying heavy capital to build and maintain future-proof transit pipelines and massive green networks.</p>
+                    </div>
+                    <div class="fluent-glass-panel arch-card">
+                        <h4 style="color: #10b981;"><i class="fa-solid fa-shield-halved mb-2"></i><br>Risk Management</h4>
+                        <p>Implementing aggressive defensive strategies to mitigate disaster risk and establish absolute civic resilience.</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- ==========================================
+             MISTRAL AI ATTRIBUTION SECTION
+             ========================================== -->
+        <section class="ai-attribution-section">
+            <div class="fluent-glass-panel attribution-card">
+                
+                <!-- Left: Logos & Summary -->
+                <div class="attribution-visuals">
+                    <div class="logo-group">
+                        <!-- Placeholder for IBM Logo -->
+                        <div class="ibm-logo-placeholder">
+                            Mistral AI & IBM
+                        </div>
+                        <div class="divider"></div>
+                        <!-- Placeholder for WatsonX Logo with Circular Image -->
+                        <div class="watsonx-logo-placeholder">
+                              <img src="https://avatars.githubusercontent.com/u/132372032?s=200&v=4" alt="Mistral Logo" class="circular-logo">
+                            <img src="https://eu-de.dataplatform.cloud.ibm.com/wx/graphics/prompts/watsonx-avatar-light.svg" alt="WatsonX Logo" class="circular-logo">
+                            watson<span class="highlight-text">x</span>
+                        </div>
+                    </div>
+                    <h3>Multimodal AI Framework</h3>
+                    <p>The urban analytics, visual synthesis, and strategic logic within this module are powered by Mistral Small 3.1 (2503). An instruction-finetuned, state-of-the-art 24B parameter engine delivering exceptional vision understanding, advanced reasoning, and long-context telemetry analysis.</p>
+                    <div class="attribution-tags">
+                        <span class="fluent-badge"><i class="fa-solid fa-microchip"></i> 24B Parameters</span>
+                        <span class="fluent-badge"><i class="fa-solid fa-eye"></i> Vision-Enabled</span>
+                        <span class="fluent-badge"><i class="fa-solid fa-scale-balanced"></i> Apache 2.0</span>
+                    </div>
+                </div>
+                
+                <!-- Right: Technical Specifications Grid -->
+                <div class="attribution-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Model Core</span>
+                        <span class="spec-value data-mono">Mistral-Small-3.1-Instruct</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Developers</span>
+                        <span class="spec-value">Mistral AI</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Context Window</span>
+                        <span class="spec-value data-mono">128,000 Tokens</span>
+                    </div>
+                    <div class="spec-divider"></div>
+                    <div class="spec-capabilities">
+                        <span class="spec-label mb-2" style="display:block;">Engine Capabilities</span>
+                        <div class="capabilities-grid">
+                            <span><i class="fa-solid fa-check"></i> Visual Understanding</span>
+                            <span><i class="fa-solid fa-check"></i> Native Tool Calling</span>
+                            <span><i class="fa-solid fa-check"></i> Multilingual Base</span>
+                            <span><i class="fa-solid fa-check"></i> Long Doc Analysis</span>
+                            <span><i class="fa-solid fa-check"></i> Agentic Framework</span>
+                            <span><i class="fa-solid fa-check"></i> JSON Outputting</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        </div>
+        
+
+        <!-- Full-Width Fluent Footer -->
+        <footer class="fluent-master-footer">
+            <div class="footer-inner-content">
+                
+                <!-- Left: Branding & Core Info -->
+                <div class="footer-brand-column">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
+                        <span>NEXUS 11</span>
+                    </div>
+                    <p class="footer-tagline">Advanced urban telemetry and SDG 11 infrastructure intelligence engine built for sustainable civic scaling.</p>
+                    <div class="footer-version data-mono">SYSTEM_ONLINE // SDG_11</div>
+                </div>
+
+                <!-- Right: All Four Ecosystem Logos -->
+                <div class="footer-ecosystem-column">
+                    <div class="ecosystem-group">
+                        <span class="ecosystem-label">Ecosystem Partners</span>
+                        <div class="logo-badge-grid">
+                            <!-- AICTE Badge -->
+                            <div class="fluent-glass-panel partner-badge" title="AICTE">
+                                <img src="assets/aicte-logo.png" alt="AICTE" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">AICTE</span>
+                            </div>
+                            <!-- IBM SkillsBuild Badge -->
+                            <div class="fluent-glass-panel partner-badge" title="IBM SkillsBuild">
+                                <img src="assets/ibm-skillsbuild-logo.png" alt="IBM SkillsBuild" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">IBM SkillsBuild</span>
+                            </div>
+                            <!-- 1M1B Badge -->
+                            <div class="fluent-glass-panel partner-badge" title="1M1B">
+                                <img src="assets/1m1b-logo.png" alt="1M1B" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">1M1B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- External JS Logic -->
+    <script src="script.js"></script>
+</body>
+</html>

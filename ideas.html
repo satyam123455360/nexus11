@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus 11 | SDG 11 Initiatives</title>
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ideas.css">
+    
+    <!-- Precision Typography: JetBrains Mono for data/UI. 
+         (Note: Neue Machina requires a local file or premium webfont link. 
+         A fallback is provided in the CSS if the exact font file isn't hosted locally) -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Lenis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/N11-logo.ico">
+</head>
+<body class="ideas-body">
+
+    <!-- Fluid Ambient Gradient Mesh -->
+    <div class="ideas-gradient-mesh">
+        <div class="mesh-orb orb-emerald"></div>
+        <div class="mesh-orb orb-cyan"></div>
+        <div class="mesh-orb orb-indigo"></div>
+    </div>
+    <!-- Technical Grid Overlay to match the monospace vibe -->
+    <div class="subtle-noise-overlay"></div>
+
+    <!-- Full-Width Fixed Navigation -->
+<header class="fixed-nav-wrapper">
+        <div class="top-nav">
+            <div class="brand-logo">
+                <!-- Replace src with your actual transparent logo file -->
+                <img src="assets/N11-logo.png" alt="Nexus 11" class="brand-logo-img">
+                <span>Nexus 11</span>
+            </div>
+            <nav class="nav-pills">
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="sdg_11.html"><i class="fa-solid fa-city"></i> SDG_11</a>
+                <a class="active"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
+                <a href="metrics.html"><i class="fa-solid fa-chart-line"></i> Metrics</a>
+            </nav>
+            <div class="nav-actions">
+                <!-- Fluent Glass Clock -->
+                <div class="fluent-clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display" class="data-mono">00:00:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container ideas-container">
+        
+        <!-- Problem Statement Section -->
+        <section class="ideas-hero">
+            <div class="fluent-badge mb-4"><i class="fa-solid fa-bullseye"></i> CORE_OBJECTIVE</div>
+            
+            <!-- Hero Typography (Neue Machina) -->
+            <h1 class="hero-typography">Global Urbanization.<br><span class="text-gradient">The SDG 11 Challenge.</span></h1>
+            
+            <div class="fluent-glass-panel problem-statement-card">
+                <!-- Left: Full bleed image with fluent fade -->
+                <div class="ps-image-container">
+                    <img src="assets/fa.png" alt="Urban Cityscape" loading="lazy">
+                    <div class="ps-image-overlay"></div>
+                </div>
+                
+                <!-- Right: Content -->
+                <div class="ps-content">
+                    <div class="tech-paragraph">
+                        <span class="prompt-arrow">&gt;</span>
+                        <p>Rapid urbanization and population scaling present critical challenges in establishing sustainable metropolises. Systemic vulnerabilities include inadequate infrastructure, inefficient resource management, pollution saturation, and social inequality.</p>
+                    </div>
+                    <div class="tech-paragraph">
+                        <span class="prompt-arrow">&gt;</span>
+                        <p>To achieve United Nations SDG 11—ensuring cities are inclusive, safe, resilient, and sustainable—radical engineering and ecological frameworks must be deployed. The objective is transitioning urban centers into high-efficiency environments capable of supporting a Type 1 civilization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Grid -->
+        <section class="solutions-section">
+            <div class="fluent-clean-header">
+                <h2>[ INNOVATIVE_SOLUTIONS ]</h2>
+                <p>Strategic engineering frameworks for sustainable urban resilience.</p>
+            </div>
+
+            <div class="solutions-grid">
+                
+                <!-- Solution 1 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="https://static.dezeen.com/uploads/2015/06/2-World-Trade-Centre_BIG_New-York_dezeen_468_15.jpg" alt="Vertical Forest" loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <span class="solution-number">01</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Vertical Forest Ecosystems</h3>
+                        <div class="status-pill problem-pill"><i class="fa-solid fa-triangle-exclamation"></i> VULNERABILITY</div>
+                        <p>Urban density eradicates green space, triggering heat island intensity and poor air quality.</p>
+                        
+                        <div class="status-pill solution-pill"><i class="fa-solid fa-circle-check"></i> FRAMEWORK</div>
+                        <p>Integrate high-density arboriculture into structural architecture. Vertical forests capture carbon, regulate thermal loads, and restore localized biodiversity.</p>
+                        
+                        <!-- Replaces the anchor tag in Solution 1 -->
+                        <button id="vertical-modal-btn" class="solution-link" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Initialize Framework <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="assets/sm_wst_dst.png" alt="Smart Waste Sorting" loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-recycle"></i></div>
+                            <span class="solution-number">02</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Smart Waste Management</h3>
+                        <div class="status-pill problem-pill"><i class="fa-solid fa-triangle-exclamation"></i> VULNERABILITY</div>
+                        <p>Analog waste logistics drive emissions and cripple material recycling yields.</p>
+                        
+                        <div class="status-pill solution-pill"><i class="fa-solid fa-circle-check"></i> FRAMEWORK</div>
+                        <p>Deploy IoT fill-sensors and AI-driven sorting matrices. Real-time telemetry optimizes municipal collection paths, minimizing diesel emissions and maximizing material recovery.</p>
+                        
+                        <!-- Replaces the anchor tag in Solution 2 -->
+                        <button id="waste-modal-btn" class="solution-link" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Initialize Framework <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solution 3 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="https://www.excelsior.edu/wp-content/uploads/2024/07/24-1261695_The-Role-of-Nuclear-Energy-in-Going-Carbon-Neutral_1000x568.jpg" alt="Clean Energy" loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <span class="solution-number">03</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Energy-Generating Infrastructure</h3>
+                        <div class="status-pill problem-pill"><i class="fa-solid fa-triangle-exclamation"></i> VULNERABILITY</div>
+                        <p>Reliance on external fossil fuel grids leaves cities susceptible to brownouts and massive carbon footprints.</p>
+                        
+                        <div class="status-pill solution-pill"><i class="fa-solid fa-circle-check"></i> FRAMEWORK</div>
+                        <p>Convert passive surfaces into energy harvesters. Embed photovoltaic road segments, vertical-axis micro turbines, and decentralized geothermal loops directly into the civic footprint.</p>
+                        
+                        <!-- Replaces the anchor tag in Solution 3 -->
+                        <button id="energy-modal-btn" class="solution-link" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Initialize Framework <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solution 4 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="https://images.pexels.com/photos/8393696/pexels-photo-8393696.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Water Management" loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-droplet"></i></div>
+                            <span class="solution-number">04</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Water-Sensitive Urban Design</h3>
+                        <div class="status-pill problem-pill"><i class="fa-solid fa-triangle-exclamation"></i> VULNERABILITY</div>
+                        <p>Impermeable concrete triggers lethal flash floods and blocks subterranean aquifer recharge.</p>
+                        
+                        <div class="status-pill solution-pill"><i class="fa-solid fa-circle-check"></i> FRAMEWORK</div>
+                        <p>Engineer sponge-city dynamics. Implement bioretention cells, permeable roadway layers, and closed-loop greywater recycling to stabilize local hydrological cycles.</p>
+                        
+                        <!-- Replaces the anchor tag in Solution 4 -->
+                        <button id="water-modal-btn" class="solution-link" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Initialize Framework <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solution 5 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="https://www.asla.org/getContentAsset/ddb91699-f523-472a-84a1-8b78f651c7e5/e477a59e-1df6-4e2f-9986-20ab37342540/transportation-header.webp?language=en-US" alt="Electric Transit" loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-road"></i></div>
+                            <span class="solution-number">05</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Sustainable Transit Networks</h3>
+                        <div class="status-pill problem-pill"><i class="fa-solid fa-triangle-exclamation"></i> VULNERABILITY</div>
+                        <p>Combustion-engine dependency causes chronic gridlock and high particulate matter saturation.</p>
+                        
+                        <div class="status-pill solution-pill"><i class="fa-solid fa-circle-check"></i> FRAMEWORK</div>
+                        <p>Deploy autonomous electric MaaS (Mobility-as-a-Service) fleets and grade-separated active transit spines. Apply dynamic congestion algorithms to optimize flow.</p>
+                        
+                        <!-- Replaces the anchor tag in Solution 5 -->
+                        <button id="transit-modal-btn" class="solution-link" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Initialize Framework <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solution 6 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="https://images.pexels.com/photos/325944/pexels-photo-325944.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Urban Farming" loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <span class="solution-number">06</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Urban Agriculture Matrix</h3>
+                        <div class="status-pill problem-pill"><i class="fa-solid fa-triangle-exclamation"></i> VULNERABILITY</div>
+                        <p>Dense populations rely on fragile, high-emission global logistics chains for basic food security.</p>
+                        
+                        <div class="status-pill solution-pill"><i class="fa-solid fa-circle-check"></i> FRAMEWORK</div>
+                        <p>Activate localized hydroponic rooftops and subterranean vertical farms. Utilize municipal organic waste recovery to fuel closed-loop urban nutritional cultivation.</p>
+                        
+                        <button id="agriculture-modal-btn" class="solution-link" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Initialize Framework <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<!-- IBM WatsonX Attribution Section -->
+        <section class="ai-attribution-section">
+            <div class="fluent-glass-panel attribution-card">
+                
+                <!-- Left: Logos & Summary -->
+                <div class="attribution-visuals">
+                    <div class="logo-group">
+                        <!-- Placeholder for IBM Logo -->
+                        <div class="ibm-logo-placeholder">
+                            IBM
+                        </div>
+                        <div class="divider"></div>
+                        <!-- Placeholder for WatsonX Logo with Circular Image -->
+                        <div class="watsonx-logo-placeholder">
+                            <img src="https://eu-de.dataplatform.cloud.ibm.com/wx/graphics/prompts/watsonx-avatar-light.svg" alt="WatsonX Logo" class="circular-logo">
+                            watson<span class="highlight-text">x</span>
+                        </div>
+                    </div>
+                    <h3>Generative AI Framework</h3>
+                    <p>The SDG 11 urban resilience initiatives and strategic solutions presented in this module were synthesized utilizing IBM's Granite foundation models via the WatsonX prompt lab. Engineered for high-fidelity instruction following and enterprise-scale analytics.</p>
+                    <div class="attribution-tags">
+                        <span class="fluent-badge"><i class="fa-solid fa-microchip"></i> 30B Parameters</span>
+                        <span class="fluent-badge"><i class="fa-solid fa-scale-balanced"></i> Apache 2.0</span>
+                    </div>
+                </div>
+                
+                <!-- Right: Technical Specifications Grid -->
+                <div class="attribution-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Model Core</span>
+                        <span class="spec-value data-mono">Granite-4.0-H-Small</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Developers</span>
+                        <span class="spec-value">Granite Team, IBM</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Release</span>
+                        <span class="spec-value data-mono">Oct 2, 2025</span>
+                    </div>
+                    <div class="spec-divider"></div>
+                    <div class="spec-capabilities">
+                        <span class="spec-label mb-2" style="display:block;">Engine Capabilities</span>
+                        <div class="capabilities-grid">
+                            <span><i class="fa-solid fa-check"></i> RAG Integration</span>
+                            <span><i class="fa-solid fa-check"></i> Tool Calling</span>
+                            <span><i class="fa-solid fa-check"></i> Text Extraction</span>
+                            <span><i class="fa-solid fa-check"></i> Summarization</span>
+                            <span><i class="fa-solid fa-check"></i> Code Tasks</span>
+                            <span><i class="fa-solid fa-check"></i> Multilingual Dialog</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+<!-- ==========================================
+             SINGLE CERTIFICATE SHOWCASE (SPLIT LAYOUT)
+             ========================================== -->
+        <section class="single-certificate-section">
+            <div class="fluent-glass-panel certificate-split-card">
+                
+                <!-- Left: Certificate Details -->
+                <div class="cert-split-details">
+                    <div class="fluent-badge mb-4"><i class="fa-solid fa-award"></i> CERTIFICATION</div>
+                    <h3>1M1B | AI for Sustainability Virtual Internship</h3>
+                    <p>Verified achievement demonstrating advanced proficiency in deploying, scaling, and managing enterprise-grade Agentic AI of IBM ecosystems.</p>
+                    
+                    <div class="cert-meta">
+                        <span class="data-mono"><i class="fa-brands fa-ibm"></i> IBM SkillsBuild</span>
+                        <div class="meta-divider"></div>
+                        <span class="data-mono"><i class="fa-solid fa-calendar-check"></i> Issued: Aug 2026</span>
+                    </div>
+
+                    <a href="https://www.credly.com/badges/25f7a2d4-68ea-4563-8437-a7cb661516ef" class="glass-btn-secondary cert-verify-btn" target="_blank">
+                        Agentic AI Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <!-- Right: Blurred Media Trigger -->
+                <div class="cert-split-media">
+                    <!-- The image is blurred via CSS; data-img-src tells the JS what high-res image to open -->
+                    <img src="assets/Screenshot 2026-09-13 165321.png" alt="Certificate Background" class="blurred-bg">
+                    <div class="cert-media-overlay"></div>
+                    
+                    <button class="glass-btn-primary universal-gallery-trigger" data-img-src="assets/Screenshot 2026-09-13 165321.png">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i> Show Certificate
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+<!-- Full-Width Fluent Footer -->
+        <footer class="fluent-master-footer">
+            <div class="footer-inner-content">
+                
+                <!-- Left: Branding & Core Info -->
+                <div class="footer-brand-column">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
+                        <span>Nexus 11</span>
+                    </div>
+                    <p class="footer-tagline">Advanced urban telemetry and SDG 11 infrastructure intelligence engine built for sustainable civic scaling.</p>
+                    <div class="footer-version data-mono">SYSTEM_ONLINE // SDG_11</div>
+                </div>
+
+                <!-- Right: All Four Ecosystem Logos -->
+                <div class="footer-ecosystem-column">
+                    <div class="ecosystem-group">
+                        <span class="ecosystem-label">Ecosystem Partners</span>
+                        <div class="logo-badge-grid">
+                            <!-- AICTE Badge -->
+                            <div class="fluent-glass-panel partner-badge" title = "AICTE">
+                                <img src="assets/aicte-logo.png" alt="AICTE" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">AICTE</span>
+                            </div>
+                            <!-- IBM SkillsBuild Badge -->
+                            <div class="fluent-glass-panel partner-badge" title = "IBM SkillsBuild">
+                                <img src="assets/ibm-skillsbuild-logo.png" alt="IBM SkillsBuild" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">IBM SkillsBuild</span>
+                            </div>
+                            <!-- 1M1B Badge -->
+                            <div class="fluent-glass-panel partner-badge" title = "1M1B">
+                                <img src="assets/1m1b-logo.png" alt="1M1B" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">1M1B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+         TYPE 1 TRANSIT FRAMEWORK MODAL
+         ========================================== -->
+    <div id="transit-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+            
+            <!-- Modal Header & Controls -->
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-network-wired"></i> TYPE 1 CIVILIZATION MATRIX</span>
+                    <h2>Planetary Transit Infrastructure</h2>
+                </div>
+                <button id="close-transit-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+            </div>
+
+            <!-- Scrollable Content Body (ADDED data-lenis-prevent to fix mouse wheel scroll) -->
+            <div class="framework-body custom-scroll" data-lenis-prevent>
+                
+                <div class="framework-intro">
+                    <p class="framework-desc">A Type 1 Civilization harnesses the complete energy output of its home planet. To sustain this scale, mobility frameworks must achieve absolute zero-loss efficiency, eliminating fossil fuels, localized friction, and spatial bottlenecks. Below is the blueprint for a globally unified transit ecosystem.</p>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    
+                    <!-- Concept 1: Roads & Highways -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="assets/35a5dfa8-2aec-40e6-afb8-146adfda99b3.png" alt="Smart Roads" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // TERRESTRIAL</span>
+                            <h3>Planetary Surface Corridors</h3>
+                            <p>Traditional asphalt is replaced by self-healing, piezoelectric smart metamaterials that generate power from vehicle weight. Roads act as massive wireless inductive chargers. Vehicles utilize magnetic levitation (maglev) plates, eliminating tire friction and allowing AI-synchronized swarm routing to eradicate traffic congestion entirely.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Friction Coefficient</span><span class="spec-value data-mono">0.00%</span></div>
+                                <div class="spec-row"><span class="spec-label">Power Generation</span><span class="spec-value data-mono">Active (Piezo/Solar)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 2: Railroads / Hyperloop -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://images.indianexpress.com/2026/06/bullet-train-project-3.jpg" alt="Vacuum Transit" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // TRANS-CONTINENTAL</span>
+                            <h3>Vacuum & Maglev Arteries</h3>
+                            <p>Global logistics and mass transit operate within subterranean and trans-oceanic vacuum tubes. By removing air resistance and utilizing superconducting magnetic levitation, these hyperspeed rail systems transport millions of citizens between continents in hours, powered directly by deep geothermal taps and structural solar skins.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Cruising Velocity</span><span class="spec-value data-mono">6,500 km/h</span></div>
+                                <div class="spec-row"><span class="spec-label">Atmospheric Drag</span><span class="spec-value data-mono">Nullified</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 3: Airways & Airports -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="assets/fs42424242.png" alt="Stratospheric Hubs" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // ATMOSPHERIC</span>
+                            <h3>Stratospheric VTOL Hubs</h3>
+                            <p>Massive concrete airports are replaced by vertical, building-integrated skyports (VTOL hubs). Autonomous Aerial Vehicles (AAVs) manage local flight, while intercity travel relies on hypersonic hydrogen-electric liners flying in the stratosphere, governed by a globally unified, AI-managed airspace matrix.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Propulsion</span><span class="spec-value data-mono">Hydrogen / Solid-State Ion</span></div>
+                                <div class="spec-row"><span class="spec-label">Emissions</span><span class="spec-value data-mono">H2O Vapor Only</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 4: Space Travel -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://www.jpaerospace.com/ascender/Ascender6000_BG.jpg" alt="Orbital Ring" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // INTERPLANETARY</span>
+                            <h3>Orbital Ascenders & Ring Gateways</h3>
+                            <p>Combustion rockets are obsolete. Terrestrial transit seamlessly connects to carbon-nanotube Space Elevators anchored at the equator. These ascend directly into a habitable Orbital Ring—a massive transit gateway ringing the Earth, serving as the primary launch point for Mars, Lunar colonies, and asteroid mining operations.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Ascent Vector</span><span class="spec-value data-mono">Electromagnetic Tether</span></div>
+                                <div class="spec-row"><span class="spec-label">Destination</span><span class="spec-value data-mono">Orbital Ring / LEO</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ==========================================
+         TYPE 1 WATER FRAMEWORK MODAL
+         ========================================== -->
+    <div id="water-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+            
+            <!-- Modal Header & Controls -->
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-droplet"></i> HYDROLOGICAL MATRIX</span>
+                    <h2>Planetary Water Architecture</h2>
+                </div>
+                <button id="close-water-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+            </div>
+
+            <!-- Scrollable Content Body -->
+            <div class="framework-body custom-scroll" data-lenis-prevent>
+                
+                <div class="framework-intro">
+                    <p class="framework-desc">A Type 1 Civilization operates on a zero-loss closed-loop hydrological cycle. Freshwater scarcity is eliminated through atmospheric harvesting, molecular-level graphene filtration, and hyper-permeable urban surfaces. Below is the blueprint for a globally unified, water-sensitive ecosystem.</p>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    
+                    <!-- Concept 1: Atmospheric Harvesting -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://www.jkcement.com/wp-content/uploads/2025/12/196-1024x683.png" alt="Atmospheric Towers" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // ATMOSPHERIC</span>
+                            <h3>Moisture Harvesting Spires</h3>
+                            <p>City skylines double as passive water generators. Building facades are coated in hydrophilic metamaterials that extract and condense humidity directly from the atmosphere, channeling purified water straight into the civic grid without depleting natural lakes or rivers.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Extraction Efficiency</span><span class="spec-value data-mono">98.5%</span></div>
+                                <div class="spec-row"><span class="spec-label">Energy Cost</span><span class="spec-value data-mono">Zero (Passive)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 2: Subterranean Recharge -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://static.euronews.com/articles/stories/06/23/27/78/1440x810_cmsv2_518f5768-06fd-5e77-912b-3548f2627f3b-6232778.jpg" alt="Subterranean Aquifer" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // TERRESTRIAL</span>
+                            <h3>Sponge-City Permeable Matrix</h3>
+                            <p>All urban surfaces are constructed from nanotech permeable composites. Rainwater instantly passes through roadways and plazas into vast, subterranean bio-filtered aquifers. Flash flooding is mathematically impossible, and natural groundwater levels are continuously restored.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Surface Permeability</span><span class="spec-value data-mono">10,000 L/min/m²</span></div>
+                                <div class="spec-row"><span class="spec-label">Flood Probability</span><span class="spec-value data-mono">0.00%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 3: Molecular Recycling -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://gimpex.co.in/wp-content/uploads/2026/05/ChatGPT-Image-May-21-2026-12_03_17-PM-1024x768.jpg" alt="Water Filtration" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // RECOVERY</span>
+                            <h3>Closed-Loop Graphene Purification</h3>
+                            <p>Waste water is an obsolete concept. District-level filtration nodes utilize atomic-scale graphene sieves to strip contaminants, pathogens, and heavy metals instantly. 100% of municipal greywater is purified to medical-grade standards and recirculated into the system within minutes.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Purification Standard</span><span class="spec-value data-mono">Atomic (0.1nm)</span></div>
+                                <div class="spec-row"><span class="spec-label">Civic Water Loss</span><span class="spec-value data-mono">&lt; 0.01%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 4: Coastal Defense -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://www.flooddefend.com/wp-content/uploads/2021/05/Demountable-Flood-Barrier-NEWFLAG-Category.jpg" alt="Coastal Barrier" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // OCEANIC</span>
+                            <h3>Adaptive Hydro-Barriers</h3>
+                            <p>Coastal metropolises are protected by submerged, kinetic sea walls powered by wave energy. Driven by predictive climate AI, these barriers dynamically rise to absorb catastrophic storm surges and tidal shifts, preserving urban perimeters while allowing natural marine life to pass seamlessly.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Surge Tolerance</span><span class="spec-value data-mono">Category 6 / Tsunami</span></div>
+                                <div class="spec-row"><span class="spec-label">Marine Disruption</span><span class="spec-value data-mono">Bypassed</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ==========================================
+         TYPE 1 AGRICULTURE FRAMEWORK MODAL
+         ========================================== -->
+    <div id="agriculture-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+            
+            <!-- Modal Header & Controls -->
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-seedling"></i> NUTRITIONAL MATRIX</span>
+                    <h2>Planetary Agriculture & Biosystems</h2>
+                </div>
+                <button id="close-agriculture-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+            </div>
+
+            <!-- Scrollable Content Body -->
+            <div class="framework-body custom-scroll" data-lenis-prevent>
+                
+                <div class="framework-intro">
+                    <p class="framework-desc">A Type 1 Civilization decouples food production from unpredictable natural climates and land-intensive traditional farming. By engineering closed-loop, hyper-dense nutritional matrices, metropolises evolve into 100% self-sustaining biomachines capable of feeding billions with zero ecological degradation.</p>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    
+                    <!-- Concept 1: Vertical Aeroponics -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2017/06/26/0142-WTC-CafeTerraceImage-by-BIGoriginal.1507084673.6883.jpg" alt="Vertical Farming" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // CULTIVATION</span>
+                            <h3>Hyper-Density Aeroponic Towers</h3>
+                            <p>Agricultural sprawl is reclaimed by nature. High-rise agronomy towers cultivate organic produce in climate-isolated, sterile environments. Plant roots are suspended in air and misted with precise nutrient algorithms, completely bypassing the need for soil and eliminating agricultural runoff.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Yield Multiplier</span><span class="spec-value data-mono">400x per m²</span></div>
+                                <div class="spec-row"><span class="spec-label">Water Consumption</span><span class="spec-value data-mono">-98.0%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 2: Cellular Agriculture -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://images.unsplash.com/photo-1658763440414-07d3b9c42bb8?q=80&w=1129&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cellular Agriculture" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // SYNTHESIS</span>
+                            <h3>Cellular Protein Synthesis</h3>
+                            <p>Resource-heavy livestock farming is replaced by precision cellular agriculture. High-grade proteins and meats are cultivated directly from cell cultures in sterile, automated bioreactors. This eradicates the methane emissions, deforestation, and ethical concerns associated with traditional animal agriculture.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Land Requirement</span><span class="spec-value data-mono">0.01%</span></div>
+                                <div class="spec-row"><span class="spec-label">Methane Output</span><span class="spec-value data-mono">0.00%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 3: AI Swarm Agronomy -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://i0.wp.com/www.potatonewstoday.com/wp-content/uploads/2023/09/swarmfarm-header-1.jpg?fit=1067%2C600&ssl=1" alt="AI Farming Swarm" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // AUTOMATION</span>
+                            <h3>Autonomous Agronomy Swarms</h3>
+                            <p>Human labor is elevated to system oversight while micro-drone swarms and robotic tendrils manage the physical crops. These AI-driven units monitor individual plant health via multi-spectral imaging, delivering micro-doses of nutrients exactly when needed and harvesting at the absolute peak of nutritional density.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Harvest Efficiency</span><span class="spec-value data-mono">99.9%</span></div>
+                                <div class="spec-row"><span class="spec-label">Pesticide Use</span><span class="spec-value data-mono">Nullified</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 4: Bioreactors -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://bluebioeconomy.eu/wp-content/uploads/2021/07/shutterstock_1482050849-1568x1043.jpg" alt="Algae Bioreactor" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // SUBTERRANEAN</span>
+                            <h3>Algae & Fungal Bioreactors</h3>
+                            <p>Unused subterranean civic levels are transformed into massive bioluminescent algae and fungal networks. These highly efficient organisms act as dual-purpose engines: synthesizing hyper-caloric nutritional pastes and bioplastics while simultaneously scrubbing massive volumes of CO2 from the urban atmosphere.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">CO2 Sequestration</span><span class="spec-value data-mono">Active Processing</span></div>
+                                <div class="spec-row"><span class="spec-label">Biomass Output</span><span class="spec-value data-mono">Exponential</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- ==========================================
+         TYPE 1 ENERGY FRAMEWORK MODAL
+         ========================================== -->
+    <div id="energy-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+            
+            <!-- Modal Header & Controls -->
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-bolt"></i> ENERGY MATRIX</span>
+                    <h2>Planetary Power Infrastructure</h2>
+                </div>
+                <button id="close-energy-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+            </div>
+
+            <!-- Scrollable Content Body -->
+            <div class="framework-body custom-scroll" data-lenis-prevent>
+                
+                <div class="framework-intro">
+                    <p class="framework-desc">To achieve Kardashev Type 1 status, a civilization must capture and utilize the total energy output available on its home planet. This requires entirely decommissioning centralized, combustion-based grids and deploying a decentralized, zero-emission, multi-tiered harvesting matrix covering the surface, subterranean depths, and orbital space.</p>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    
+                    <!-- Concept 1: Orbital Solar -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://eprijournal.com/wp-content/uploads/2024/07/2024.06-EJ_AS740879878.jpg" alt="Orbital Solar Arrays" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // ORBITAL</span>
+                            <h3>Geosynchronous Solar Arrays</h3>
+                            <p>Surface solar panels are bottlenecked by weather and atmospheric scattering. A Type 1 civilization deploys massive photovoltaic arrays in geosynchronous orbit. Basking in uninterrupted, 24/7 solar radiation, these arrays beam colossal amounts of energy back to terrestrial rectenna grids via highly focused microwave frequencies.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Uptime</span><span class="spec-value data-mono">99.99% (No Night Cycle)</span></div>
+                                <div class="spec-row"><span class="spec-label">Transmission Loss</span><span class="spec-value data-mono">&lt; 2.5%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 2: Piezoelectric Harvest -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*ArCAU07fYixkapWXTx4F4Q.jpeg" alt="Kinetic City Floor" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // KINETIC</span>
+                            <h3>Piezoelectric Urban Surfaces</h3>
+                            <p>Every square meter of the civic footprint becomes an active generator. High-footfall pedestrian plazas, autonomous transit corridors, and structural foundation dampers are embedded with piezoelectric metamaterials, instantly converting the ambient kinetic friction of the bustling metropolis into usable grid electricity.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Harvest Source</span><span class="spec-value data-mono">Ambient Civic Friction</span></div>
+                                <div class="spec-row"><span class="spec-label">Output Scalability</span><span class="spec-value data-mono">Directly to Population</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 3: Geothermal Taps -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://cms.interestingengineering.com/wp-content/uploads/2025/05/Thumbnails-for-IE-articles-Geothermal-Power-Plant.jpg" alt="Geothermal Energy" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // SUBTERRANEAN</span>
+                            <h3>Deep Mantle Geothermal Taps</h3>
+                            <p>To provide an unbreakable baseload power supply, advanced drilling robotics penetrate deeply into the Earth's crust, tapping directly into mantle heat dynamics. Closed-loop, super-critical CO2 turbines use this extreme thermal differential to generate massive megawattage entirely independent of surface conditions.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Baseload Stability</span><span class="spec-value data-mono">Absolute (100%)</span></div>
+                                <div class="spec-row"><span class="spec-label">Fuel Requirement</span><span class="spec-value data-mono">Zero</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 4: Solid State Fusion -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://www.rgs.org/media/k1lj1yz4/raymond-zhang-terrace-ep24.jpeg" alt="Fusion Core" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // DECENTRALIZED</span>
+                            <h3>District Micro-Fusion Nodes</h3>
+                            <p>Vulnerable, monolithic power plants are replaced by a decentralized mesh of magnetic-confinement micro-fusion reactors embedded at the district level. Utilizing abundant hydrogen isotopes extracted from seawater, these nodes provide clean, virtually limitless peak power with zero risk of meltdown or long-lived radioactive waste.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Fuel Source</span><span class="spec-value data-mono">Deuterium (Seawater)</span></div>
+                                <div class="spec-row"><span class="spec-label">Carbon Footprint</span><span class="spec-value data-mono">0.00%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<!-- ==========================================
+         TYPE 1 WASTE & MATERIALS FRAMEWORK MODAL
+         ========================================== -->
+    <div id="waste-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+            
+            <!-- Modal Header & Controls -->
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-recycle"></i> CIRCULAR ECONOMY MATRIX</span>
+                    <h2>Planetary Material Lifecycle</h2>
+                </div>
+                <button id="close-waste-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+            </div>
+
+            <!-- Scrollable Content Body -->
+            <div class="framework-body custom-scroll" data-lenis-prevent>
+                
+                <div class="framework-intro">
+                    <p class="framework-desc">In a Type 1 Civilization, the concept of "waste" is mathematically eliminated. The urban ecosystem operates on a flawless, closed-loop circular economy where every byproduct is instantly cataloged, deconstructed, and upcycled into raw operational material. Landfills are obsolete.</p>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    
+                    <!-- Concept 1: Pneumatic Veins -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?q=80&w=1200&auto=format&fit=crop" alt="Pneumatic Tubes" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // LOGISTICS</span>
+                            <h3>Subterranean Pneumatic Veins</h3>
+                            <p>Diesel collection fleets and street-level bins are entirely replaced by an underground, high-velocity pneumatic tube network. Waste is deposited at the source—residential units and civic zones—and instantly vacuumed at 100 km/h directly to decentralized processing nodes, eradicating collection emissions and odor.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Collection Fleet Emissions</span><span class="spec-value data-mono">0.00%</span></div>
+                                <div class="spec-row"><span class="spec-label">Transit Velocity</span><span class="spec-value data-mono">100 km/h</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 2: AI Molecular Sorting -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop" alt="AI Sorting Automation" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // AUTOMATION</span>
+                            <h3>AI-Driven Molecular Sorting</h3>
+                            <p>At the processing nodes, mixed materials are analyzed via hyperspectral imaging and X-ray fluorescence. High-speed robotic tendrils and targeted pneumatic bursts categorize elements down to their molecular composition with zero error, routing pure material streams for immediate industrial reuse.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Sorting Accuracy</span><span class="spec-value data-mono">99.999%</span></div>
+                                <div class="spec-row"><span class="spec-label">Human Intervention</span><span class="spec-value data-mono">Zero</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 3: Plasma Gasification -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://image.kindle-tech.com/images/faqs/1713/main_image_1765171693_693661ed42977.webp" alt="Plasma Gasification" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // RECOVERY</span>
+                            <h3>Plasma Gasification Cores</h3>
+                            <p>Unrecyclable or highly hazardous compounds bypass incinerators and are instead subjected to 10,000°C plasma arcs. This extreme heat vaporizes the waste entirely, breaking complex molecules into usable synthetic gas (syngas) for power generation, while heavy elements melt into an inert, vitrified slag used for road construction.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Byproduct Toxicity</span><span class="spec-value data-mono">Nullified</span></div>
+                                <div class="spec-row"><span class="spec-label">Material Recovery</span><span class="spec-value data-mono">100% (Syngas/Slag)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 4: Enzymatic Depolymerization -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=1200&auto=format&fit=crop" alt="Biotech Lab" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // BIOTECH</span>
+                            <h3>Enzymatic Polymer Breakdown</h3>
+                            <p>To combat synthetic plastics, the ecosystem employs bio-engineered enzymes and nanobots that rapidly digest complex polymers. Within hours, these bio-agents break plastics down into their original monomer building blocks, which are immediately funneled into 3D-printing reservoirs to manufacture new civic assets.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Breakdown Duration</span><span class="spec-value data-mono">Hours (vs. Centuries)</span></div>
+                                <div class="spec-row"><span class="spec-label">Polymer Yield</span><span class="spec-value data-mono">Infinite Loop</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ==========================================
+         TYPE 1 ECOLOGY FRAMEWORK MODAL
+         ========================================== -->
+    <div id="vertical-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+            
+            <!-- Modal Header & Controls -->
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-leaf"></i> BIOSYNTHETIC MATRIX</span>
+                    <h2>Planetary Ecological Infrastructure</h2>
+                </div>
+                <button id="close-vertical-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+            </div>
+
+            <!-- Scrollable Content Body -->
+            <div class="framework-body custom-scroll" data-lenis-prevent>
+                
+                <div class="framework-intro">
+                    <p class="framework-desc">A Type 1 Civilization does not pave over the natural world; it merges with it. Megacities act as living, breathing extensions of the global biosphere. By weaving synthetic biology and structural arboriculture directly into the civic framework, urban centers become massive carbon sinks, micro-climate regulators, and sanctuaries for planetary biodiversity.</p>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    
+                    <!-- Concept 1: Structural Arboriculture -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2017/06/26/0172-WTC-TerracesImage-by-BIGoriginal.1507084680.1627.jpg" alt="Structural Arboriculture" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // INTEGRATION</span>
+                            <h3>Structural Arboriculture</h3>
+                            <p>Buildings are no longer static objects; they are synthetic mega-flora. Genetic engineering allows specialized, hyper-dense tree root systems to weave symbiotically with self-healing concrete and graphene frameworks, creating living structures that actively sequester gigatons of carbon while reinforcing the building's tensile strength.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Carbon Sequestration</span><span class="spec-value data-mono">Active Gigaton Scale</span></div>
+                                <div class="spec-row"><span class="spec-label">Structural Synergy</span><span class="spec-value data-mono">Symbiotic Reinforcement</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 2: Bioluminescent Canopy -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://images.wallpapersden.com/image/download/trees-nature-city_ZmxmbG2UmZqaraWkpJRmbmdlrWZlbWU.jpg" alt="Bioluminescent Flora" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // ILLUMINATION</span>
+                            <h3>Bioluminescent Urban Canopy</h3>
+                            <p>Energy-intensive street lighting is entirely decommissioned. Urban avenues and vertical parks are populated with gene-edited bioluminescent flora that emit a soft, ambient glow. This passive lighting network responds dynamically to atmospheric conditions and pedestrian movement, eliminating civic light pollution and restoring the night sky.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Grid Energy Draw</span><span class="spec-value data-mono">0.00%</span></div>
+                                <div class="spec-row"><span class="spec-label">Light Pollution</span><span class="spec-value data-mono">Eliminated</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 3: Micro-Climate Regulation -->
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop" alt="Micro-Climate Fog" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // ATMOSPHERIC</span>
+                            <h3>AI-Regulated Micro-Climates</h3>
+                            <p>The urban heat island effect is neutralized. Distributed AI swarms manipulate automated misting arrays embedded in vertical forests, triggering rapid evaporation cycles. Paired with massive green canopies, these systems instantly drop localized temperatures by up to 8°C and scrub 99.9% of airborne particulates.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Thermal Reduction</span><span class="spec-value data-mono">-8°C (Localized)</span></div>
+                                <div class="spec-row"><span class="spec-label">Air Purity Index</span><span class="spec-value data-mono">99.9% Toxin-Free</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concept 4: Wildlife Corridors -->
+                    <div class="fluent-glass-panel concept-card reverse-layout">
+                        <div class="concept-media">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop" alt="Nature Corridor" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // BIODIVERSITY</span>
+                            <h3>Symbiotic Wildlife Corridors</h3>
+                            <p>The city is a habitat, not a barrier. Multi-tiered aerial bridges and subterranean greenways traverse the entire metropolis, ensuring planetary migration routes remain unbroken. A thriving, pre-industrial level of biodiversity flourishes directly alongside high-density human habitation, monitored silently by ecological AI.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Biodiversity Index</span><span class="spec-value data-mono">Pre-Industrial Baseline</span></div>
+                                <div class="spec-row"><span class="spec-label">Migration Blockage</span><span class="spec-value data-mono">0.00%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- ==========================================
+         UNIVERSAL FLUENT LIGHTBOX GALLERY
+         ========================================== -->
+    <div id="universal-lightbox" class="fluent-lightbox">
+        <div class="lightbox-overlay"></div>
+        <button id="close-lightbox" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Expanded View">
+        </div>
+    </div>
+
+    <!-- External JS Logic -->
+    <script src="ideas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

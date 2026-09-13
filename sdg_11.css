@@ -1,0 +1,322 @@
+/* ==========================================
+   SDG 11 SPECIFIC STYLES & TRICOLOR MESH
+   ========================================== */
+
+/* --- Custom Tricolor Ambient Background --- */
+body.sdg-body {
+    background-color: #030508; /* Extra deep dark base to make colors pop */
+}
+
+.tricolor-ambient-mesh {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background: #030508;
+}
+
+.mesh-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(180px); /* Massive blur for smooth glass light bleed */
+    opacity: 0.35;
+    animation: tricolorDrift 20s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+    will-change: transform; 
+    backface-visibility: hidden;
+}
+
+/* Saffron / Orange (AICTE & 1M1B) - Top/Left */
+.orb-saffron {
+    width: 65vw; height: 65vw; max-width: 800px; max-height: 800px;
+    background: radial-gradient(circle, #ea580c 0%, rgba(234, 88, 12, 0) 70%);
+    top: -15%; left: -5%;
+}
+
+/* Aqua / Blue (IBM) - Center/Right */
+.orb-aqua {
+    width: 75vw; height: 75vw; max-width: 900px; max-height: 900px;
+    background: radial-gradient(circle, #0ea5e9 0%, rgba(14, 165, 233, 0) 70%);
+    top: 30%; right: -15%;
+    animation-delay: -5s;
+}
+
+/* Emerald / Green (SDG) - Bottom/Left */
+.orb-emerald {
+    width: 60vw; height: 60vw; max-width: 700px; max-height: 700px;
+    background: radial-gradient(circle, #10b981 0%, rgba(16, 185, 129, 0) 70%);
+    bottom: -15%; left: 5%;
+    animation-delay: -10s;
+}
+
+@keyframes tricolorDrift {
+    0% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(4vw, 6vh, 0) scale(1.05); }
+    100% { transform: translate3d(-3vw, 4vh, 0) scale(0.95); }
+}
+
+/* --- Page-Specific Layout Adjustments --- */
+.sdg-hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 140px 20px 60px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.indicator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.indicator-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.indicator-item:hover {
+    transform: translateY(-4px);
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.indicator-badge {
+    flex-shrink: 0;
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.indicator-item p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.split-list-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.list-group h3 {
+    font-size: 1.8rem;
+    color: #f8fafc;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.list-item {
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.list-item h4 {
+    font-size: 1.1rem;
+    color: #10b981;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.list-item p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .split-list-panel { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* --- Footer Gap & Spacing Fixes --- */
+
+/* 1. Remove all external margins from the wrapper and handle space internally */
+.sdg-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 60px !important; 
+}
+
+/* 2. Kill the massive 120px margin from the final global section so it doesn't push the wrapper down */
+.sdg-wrapper .fluent-smooth-section:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+/* 3. Strip the global 80px top margin off the footer to snap it flush against the wrapper */
+.sdg-body .fluent-master-footer {
+    margin-top: 0 !important; 
+    padding-bottom: 60px !important; /* Matches the breathing room of ideas.html */
+}
+
+
+/* --- AI Attribution Section (Mistral Specific) --- */
+.ai-attribution-section {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    position: relative;
+    z-index: 10;
+}
+
+.attribution-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    background: rgba(13, 22, 38, 0.45);
+}
+
+/* Left Side Visuals */
+.attribution-visuals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+/* Force Neue Machina / Sans-serif for the logos so they stand out from the monospace */
+.ibm-logo-placeholder, .watsonx-logo-placeholder {
+    font-family: 'Neue Machina', -apple-system, sans-serif !important;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f8fafc;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 1px;
+}
+/* --- Circular Image Logo Styling --- */
+.circular-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 15px rgba(16, 185, 129, 0.15);
+    /* Prevents the image from stretching or squishing in flex containers */
+    flex-shrink: 0; 
+}
+.watsonx-logo-placeholder {
+    font-weight: 400;
+}
+
+.logo-group .divider {
+    width: 1px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.attribution-visuals h3 {
+    font-size: 1.5rem;
+    color: #f8fafc;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.attribution-visuals p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    font-weight: 300;
+}
+
+.attribution-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Right Side Technical Specs */
+.attribution-specs {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spec-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.spec-value {
+    font-size: 0.95rem;
+    color: #f8fafc;
+    font-weight: 400;
+}
+
+.spec-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 10px 0;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.capabilities-grid span {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 300;
+}
+
+.capabilities-grid i {
+    color: #10b981;
+    font-size: 0.8rem;
+    background: rgba(16, 185, 129, 0.1);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/* Responsive Wrap */
+@media (max-width: 900px) {
+    .attribution-card {
+        grid-template-columns: 1fr;
+        padding: 32px;
+        gap: 40px;
+    }
+}

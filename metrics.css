@@ -1,0 +1,125 @@
+/* ==========================================
+   METRICS PAGE SPECIFIC STYLES (COMING SOON)
+   ========================================== */
+/* --- Fixed Parallax Background --- */
+#parallax-backdrop {
+    position: fixed;
+    top: -15vh;
+    left: -10vw;
+    width: 120vw;
+    height: 130vh;
+    z-index: 0;
+    background-color: #05080f;
+    background-image: url('https://wallpapercave.com/wp/wp4009263.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.4; /* Slightly brighter background */
+    pointer-events: none;
+    will-change: transform;
+}
+/* Main container is a flex column to force the footer to the bottom of the screen */
+.metrics-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* The hero section expands to fill the empty space */
+.metrics-hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 80px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Standby Glass Panel */
+.standby-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 60px;
+    max-width: 800px;
+    width: 100%;
+    background: rgba(13, 22, 38, 0.45);
+    border-radius: 24px;
+}
+
+.standby-card h1 {
+    font-size: 3.8rem;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.standby-subtext {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.return-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Spinning Radar Animation --- */
+.radar-container {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.15);
+}
+
+.radar-container i {
+    font-size: 2rem;
+    color: #10b981;
+    position: relative;
+    z-index: 2;
+}
+
+/* The scanning beam */
+.radar-sweep {
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    width: 50%; 
+    height: 50%;
+    background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.6));
+    transform-origin: bottom left;
+    animation: radarSpin 2.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes radarSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ensure footer sticks to the bottom natively */
+.metrics-container .fluent-master-footer {
+    margin-top: auto; 
+}
+
+@media (max-width: 900px) {
+    .standby-card {
+        padding: 50px 30px;
+    }
+    .standby-card h1 {
+        font-size: 2.5rem;
+    }
+}

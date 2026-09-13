@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus 11 | Live Metrics</title>
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="metrics.css">
+    
+    <!-- Precision Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Lenis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/N11-logo.ico">
+</head>
+<body>
+
+    <!-- Layer 1: Parallax Image (From style.css) -->
+    <div id="parallax-backdrop"></div>
+    
+    <!-- Layer 1.5: Volumetric Godrays -->
+    <div class="godray-container">
+        <div class="godray ray-1"></div>
+        <div class="godray ray-2"></div>
+        <div class="godray ray-3"></div>
+    </div>
+    
+    <!-- Layer 3: Vignette Edge Darkening -->
+    <div class="vignette-overlay"></div>
+
+    <!-- Full-Width Fixed Navigation -->
+    <header class="fixed-nav-wrapper">
+        <div class="top-nav">
+            <div class="brand-logo">
+                <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
+                <span>NEXUS 11</span>
+            </div>
+            
+            <nav class="nav-pills">
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="sdg_11.html"><i class="fa-solid fa-city"></i> SDG_11</a>
+                <a href="ideas.html"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
+                <!-- Active class moved to Metrics -->
+                <a class="active"><i class="fa-solid fa-chart-line"></i> Metrics</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="fluent-clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display" class="data-mono">00:00:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container ensures the footer is pushed to the absolute bottom -->
+    <div class="app-container metrics-container">
+        
+        <!-- Standby Hero Content -->
+        <main class="metrics-hero">
+            <div class="fluent-glass-panel standby-card">
+                
+                <div class="radar-container">
+                    <div class="radar-sweep"></div>
+                    <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+                
+                <div class="fluent-badge mb-4"><i class="fa-solid fa-triangle-exclamation"></i> DEPLOYMENT_PENDING</div>
+                
+                <h1 class="hero-typography">
+                    Real-Time Telemetry.<br><span class="text-gradient">Coming Soon.</span>
+                </h1>
+                
+                <p class="data-mono standby-subtext">Establishing secure handshake with civic grid sensors...<br>Awaiting live data streams.</p>
+                
+                <a href="index.html" class="glass-btn-secondary return-btn">
+                    <i class="fa-solid fa-arrow-left"></i> Return to Infrastructure Hub
+                </a>
+            </div>
+        </main>
+
+        <!-- Full-Width Fluent Footer -->
+        <footer class="fluent-master-footer">
+            <div class="footer-inner-content">
+                
+                <!-- Left: Branding & Core Info -->
+                <div class="footer-brand-column">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
+                        <span>NEXUS 11</span>
+                    </div>
+                    <p class="footer-tagline">Advanced urban telemetry and SDG 11 infrastructure intelligence engine built for sustainable civic scaling.</p>
+                    <div class="footer-version data-mono">SYSTEM_ONLINE // SDG_11</div>
+                </div>
+
+                <!-- Right: All Four Ecosystem Logos -->
+                <div class="footer-ecosystem-column">
+                    <div class="ecosystem-group">
+                        <span class="ecosystem-label">Ecosystem Partners</span>
+                        <div class="logo-badge-grid">
+                            <!-- AICTE Badge -->
+                            <div class="fluent-glass-panel partner-badge" title="AICTE">
+                                <img src="assets/aicte-logo.png" alt="AICTE" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">AICTE</span>
+                            </div>
+                            <!-- IBM SkillsBuild Badge -->
+                            <div class="fluent-glass-panel partner-badge" title="IBM SkillsBuild">
+                                <img src="assets/ibm-skillsbuild-logo.png" alt="IBM SkillsBuild" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">IBM SkillsBuild</span>
+                            </div>
+                            <!-- 1M1B Badge -->
+                            <div class="fluent-glass-panel partner-badge" title="1M1B">
+                                <img src="assets/1m1b-logo.png" alt="1M1B" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span class="badge-text data-mono fallback-text">1M1B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- External JS Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
