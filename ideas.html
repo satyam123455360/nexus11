@@ -12,11 +12,11 @@
          (Note: Neue Machina requires a local file or premium webfont link. 
          A fallback is provided in the CSS if the exact font file isn't hosted locally) -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- FontAwesome & Lenis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="assets/N11-logo.ico">
+    <link rel="icon" type="image/gif" href="assets/N11-logo.png" />
 </head>
 <body class="ideas-body">
 
@@ -38,7 +38,7 @@
                 <span>Nexus 11</span>
             </div>
             <nav class="nav-pills">
-                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
                 <a href="sdg_11.html"><i class="fa-solid fa-city"></i> SDG_11</a>
                 <a class="active"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
                 <a href="metrics.html"><i class="fa-solid fa-chart-line"></i> Metrics</a>
@@ -399,116 +399,125 @@
 
 
 
+<!-- ==========================================
+     TYPE 1 TRANSIT FRAMEWORK MODAL
+     ========================================== -->
+<div id="transit-modal" class="fluent-framework-modal">
+    <div class="framework-glass-surface">
+        
+        <!-- Modal Header & Controls -->
+        <div class="framework-header">
+            <div class="header-titles">
+                <span class="fluent-badge fb-modal"><i class="fa-solid fa-network-wired"></i> TYPE 1 CIVILIZATION MATRIX</span>
+                <h2>Planetary Transit Infrastructure</h2>
+            </div>
+            <button id="close-transit-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+        </div>
+
+        <!-- Scrollable Content Body -->
+        <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
+            
+            <div class="framework-intro">
+                <p class="framework-desc">A Type 1 Civilization harnesses the complete energy output of its home planet. To sustain this scale, mobility frameworks must achieve absolute zero-loss efficiency, eliminating fossil fuels, localized friction, and spatial bottlenecks. Below is the blueprint for a globally unified transit ecosystem.</p>
+            </div>
+
+            <!-- Fluent AI Audit Box (Placed as a direct child of framework-body so position: sticky functions correctly) -->
+            <div class="ai-audit-container fluent-glass-panel">
+                <div class="audit-header">
+                    <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                    <span class="audit-title-text">AI Audit</span>
+                    <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                        <i class="fa-solid fa-bolt"></i> Run Analysis
+                    </button>
+                </div>
+                <div class="audit-content hidden"></div>
+            </div>
+
+            <div class="concept-cards-wrapper">
+                
+                <!-- Concept 1: Roads & Highways -->
+                <div class="fluent-glass-panel concept-card">
+                    <div class="concept-media">
+                        <img src="assets/35a5dfa8-2aec-40e6-afb8-146adfda99b3.png" alt="Smart Roads" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">01 // TERRESTRIAL</span>
+                        <h3>Planetary Surface Corridors</h3>
+                        <p>Traditional asphalt is replaced by self-healing, piezoelectric smart metamaterials that generate power from vehicle weight. Roads act as massive wireless inductive chargers. Vehicles utilize magnetic levitation (maglev) plates, eliminating tire friction and allowing AI-synchronized swarm routing to eradicate traffic congestion entirely.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Friction Coefficient</span><span class="spec-value data-mono">0.00%</span></div>
+                            <div class="spec-row"><span class="spec-label">Power Generation</span><span class="spec-value data-mono">Active (Piezo/Solar)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 2: Railroads / Hyperloop -->
+                <div class="fluent-glass-panel concept-card reverse-layout">
+                    <div class="concept-media">
+                        <img src="https://images.indianexpress.com/2026/06/bullet-train-project-3.jpg" alt="Vacuum Transit" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">02 // TRANS-CONTINENTAL</span>
+                        <h3>Vacuum & Maglev Arteries</h3>
+                        <p>Global logistics and mass transit operate within subterranean and trans-oceanic vacuum tubes. By removing air resistance and utilizing superconducting magnetic levitation, these hyperspeed rail systems transport millions of citizens between continents in hours, powered directly by deep geothermal taps and structural solar skins.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Cruising Velocity</span><span class="spec-value data-mono">6,500 km/h</span></div>
+                            <div class="spec-row"><span class="spec-label">Atmospheric Drag</span><span class="spec-value data-mono">Nullified</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 3: Airways & Airports -->
+                <div class="fluent-glass-panel concept-card">
+                    <div class="concept-media">
+                        <img src="assets/fs42424242.png" alt="Stratospheric Hubs" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">03 // ATMOSPHERIC</span>
+                        <h3>Stratospheric VTOL Hubs</h3>
+                        <p>Massive concrete airports are replaced by vertical, building-integrated skyports (VTOL hubs). Autonomous Aerial Vehicles (AAVs) manage local flight, while intercity travel relies on hypersonic hydrogen-electric liners flying in the stratosphere, governed by a globally unified, AI-managed airspace matrix.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Propulsion</span><span class="spec-value data-mono">Hydrogen / Solid-State Ion</span></div>
+                            <div class="spec-row"><span class="spec-label">Emissions</span><span class="spec-value data-mono">H2O Vapor Only</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 4: Space Travel -->
+                <div class="fluent-glass-panel concept-card reverse-layout">
+                    <div class="concept-media">
+                        <img src="https://www.jpaerospace.com/ascender/Ascender6000_BG.jpg" alt="Orbital Ring" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">04 // INTERPLANETARY</span>
+                        <h3>Orbital Ascenders & Ring Gateways</h3>
+                        <p>Combustion rockets are obsolete. Terrestrial transit seamlessly connects to carbon-nanotube Space Elevators anchored at the equator. These ascend directly into a habitable Orbital Ring—a massive transit gateway ringing the Earth, serving as the primary launch point for Mars, Lunar colonies, and asteroid mining operations.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Ascent Vector</span><span class="spec-value data-mono">Electromagnetic Tether</span></div>
+                            <div class="spec-row"><span class="spec-label">Destination</span><span class="spec-value data-mono">Orbital Ring / LEO</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
 <!-- ==========================================
-         TYPE 1 TRANSIT FRAMEWORK MODAL
-         ========================================== -->
-    <div id="transit-modal" class="fluent-framework-modal">
-        <div class="framework-glass-surface">
-            
-            <!-- Modal Header & Controls -->
-            <div class="framework-header">
-                <div class="header-titles">
-                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-network-wired"></i> TYPE 1 CIVILIZATION MATRIX</span>
-                    <h2>Planetary Transit Infrastructure</h2>
-                </div>
-                <button id="close-transit-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
-            </div>
-
-            <!-- Scrollable Content Body (ADDED data-lenis-prevent to fix mouse wheel scroll) -->
-            <div class="framework-body custom-scroll" data-lenis-prevent>
-                
-                <div class="framework-intro">
-                    <p class="framework-desc">A Type 1 Civilization harnesses the complete energy output of its home planet. To sustain this scale, mobility frameworks must achieve absolute zero-loss efficiency, eliminating fossil fuels, localized friction, and spatial bottlenecks. Below is the blueprint for a globally unified transit ecosystem.</p>
-                </div>
-
-                <div class="concept-cards-wrapper">
-                    
-                    <!-- Concept 1: Roads & Highways -->
-                    <div class="fluent-glass-panel concept-card">
-                        <div class="concept-media">
-                            <img src="assets/35a5dfa8-2aec-40e6-afb8-146adfda99b3.png" alt="Smart Roads" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // TERRESTRIAL</span>
-                            <h3>Planetary Surface Corridors</h3>
-                            <p>Traditional asphalt is replaced by self-healing, piezoelectric smart metamaterials that generate power from vehicle weight. Roads act as massive wireless inductive chargers. Vehicles utilize magnetic levitation (maglev) plates, eliminating tire friction and allowing AI-synchronized swarm routing to eradicate traffic congestion entirely.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Friction Coefficient</span><span class="spec-value data-mono">0.00%</span></div>
-                                <div class="spec-row"><span class="spec-label">Power Generation</span><span class="spec-value data-mono">Active (Piezo/Solar)</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Concept 2: Railroads / Hyperloop -->
-                    <div class="fluent-glass-panel concept-card reverse-layout">
-                        <div class="concept-media">
-                            <img src="https://images.indianexpress.com/2026/06/bullet-train-project-3.jpg" alt="Vacuum Transit" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // TRANS-CONTINENTAL</span>
-                            <h3>Vacuum & Maglev Arteries</h3>
-                            <p>Global logistics and mass transit operate within subterranean and trans-oceanic vacuum tubes. By removing air resistance and utilizing superconducting magnetic levitation, these hyperspeed rail systems transport millions of citizens between continents in hours, powered directly by deep geothermal taps and structural solar skins.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Cruising Velocity</span><span class="spec-value data-mono">6,500 km/h</span></div>
-                                <div class="spec-row"><span class="spec-label">Atmospheric Drag</span><span class="spec-value data-mono">Nullified</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Concept 3: Airways & Airports -->
-                    <div class="fluent-glass-panel concept-card">
-                        <div class="concept-media">
-                            <img src="assets/fs42424242.png" alt="Stratospheric Hubs" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // ATMOSPHERIC</span>
-                            <h3>Stratospheric VTOL Hubs</h3>
-                            <p>Massive concrete airports are replaced by vertical, building-integrated skyports (VTOL hubs). Autonomous Aerial Vehicles (AAVs) manage local flight, while intercity travel relies on hypersonic hydrogen-electric liners flying in the stratosphere, governed by a globally unified, AI-managed airspace matrix.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Propulsion</span><span class="spec-value data-mono">Hydrogen / Solid-State Ion</span></div>
-                                <div class="spec-row"><span class="spec-label">Emissions</span><span class="spec-value data-mono">H2O Vapor Only</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Concept 4: Space Travel -->
-                    <div class="fluent-glass-panel concept-card reverse-layout">
-                        <div class="concept-media">
-                            <img src="https://www.jpaerospace.com/ascender/Ascender6000_BG.jpg" alt="Orbital Ring" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // INTERPLANETARY</span>
-                            <h3>Orbital Ascenders & Ring Gateways</h3>
-                            <p>Combustion rockets are obsolete. Terrestrial transit seamlessly connects to carbon-nanotube Space Elevators anchored at the equator. These ascend directly into a habitable Orbital Ring—a massive transit gateway ringing the Earth, serving as the primary launch point for Mars, Lunar colonies, and asteroid mining operations.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Ascent Vector</span><span class="spec-value data-mono">Electromagnetic Tether</span></div>
-                                <div class="spec-row"><span class="spec-label">Destination</span><span class="spec-value data-mono">Orbital Ring / LEO</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- ==========================================
          TYPE 1 WATER FRAMEWORK MODAL
          ========================================== -->
     <div id="water-modal" class="fluent-framework-modal">
@@ -523,11 +532,23 @@
                 <button id="close-water-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
             </div>
 
-            <!-- Scrollable Content Body -->
-            <div class="framework-body custom-scroll" data-lenis-prevent>
+            <!-- Scrollable Content Body (ADDED onscroll trigger for Marquee) -->
+            <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
                 
                 <div class="framework-intro">
                     <p class="framework-desc">A Type 1 Civilization operates on a zero-loss closed-loop hydrological cycle. Freshwater scarcity is eliminated through atmospheric harvesting, molecular-level graphene filtration, and hyper-permeable urban surfaces. Below is the blueprint for a globally unified, water-sensitive ecosystem.</p>
+                </div>
+
+                <!-- Fluent AI Audit Box -->
+                <div class="ai-audit-container fluent-glass-panel">
+                    <div class="audit-header">
+                        <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                        <span class="audit-title-text">AI Audit</span>
+                        <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                            <i class="fa-solid fa-bolt"></i> Run Analysis
+                        </button>
+                    </div>
+                    <div class="audit-content hidden"></div>
                 </div>
 
                 <div class="concept-cards-wrapper">
@@ -610,9 +631,7 @@
 
 
 
-
-
-    <!-- ==========================================
+<!-- ==========================================
          TYPE 1 AGRICULTURE FRAMEWORK MODAL
          ========================================== -->
     <div id="agriculture-modal" class="fluent-framework-modal">
@@ -627,11 +646,23 @@
                 <button id="close-agriculture-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
             </div>
 
-            <!-- Scrollable Content Body -->
-            <div class="framework-body custom-scroll" data-lenis-prevent>
+            <!-- Scrollable Content Body (ADDED onscroll trigger for Marquee) -->
+            <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
                 
                 <div class="framework-intro">
                     <p class="framework-desc">A Type 1 Civilization decouples food production from unpredictable natural climates and land-intensive traditional farming. By engineering closed-loop, hyper-dense nutritional matrices, metropolises evolve into 100% self-sustaining biomachines capable of feeding billions with zero ecological degradation.</p>
+                </div>
+
+                <!-- Fluent AI Audit Box -->
+                <div class="ai-audit-container fluent-glass-panel">
+                    <div class="audit-header">
+                        <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                        <span class="audit-title-text">AI Audit</span>
+                        <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                            <i class="fa-solid fa-bolt"></i> Run Analysis
+                        </button>
+                    </div>
+                    <div class="audit-content hidden"></div>
                 </div>
 
                 <div class="concept-cards-wrapper">
@@ -714,104 +745,115 @@
 
 
 
-
 <!-- ==========================================
-         TYPE 1 ENERGY FRAMEWORK MODAL
-         ========================================== -->
-    <div id="energy-modal" class="fluent-framework-modal">
-        <div class="framework-glass-surface">
-            
-            <!-- Modal Header & Controls -->
-            <div class="framework-header">
-                <div class="header-titles">
-                    <span class="fluent-badge fb-modal"><i class="fa-solid fa-bolt"></i> ENERGY MATRIX</span>
-                    <h2>Planetary Power Infrastructure</h2>
-                </div>
-                <button id="close-energy-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
+     TYPE 1 ENERGY FRAMEWORK MODAL
+     ========================================== -->
+<div id="energy-modal" class="fluent-framework-modal">
+    <div class="framework-glass-surface">
+        
+        <!-- Modal Header & Controls -->
+        <div class="framework-header">
+            <div class="header-titles">
+                <span class="fluent-badge fb-modal"><i class="fa-solid fa-bolt"></i> ENERGY MATRIX</span>
+                <h2>Planetary Power Infrastructure</h2>
             </div>
-
-            <!-- Scrollable Content Body -->
-            <div class="framework-body custom-scroll" data-lenis-prevent>
-                
-                <div class="framework-intro">
-                    <p class="framework-desc">To achieve Kardashev Type 1 status, a civilization must capture and utilize the total energy output available on its home planet. This requires entirely decommissioning centralized, combustion-based grids and deploying a decentralized, zero-emission, multi-tiered harvesting matrix covering the surface, subterranean depths, and orbital space.</p>
-                </div>
-
-                <div class="concept-cards-wrapper">
-                    
-                    <!-- Concept 1: Orbital Solar -->
-                    <div class="fluent-glass-panel concept-card">
-                        <div class="concept-media">
-                            <img src="https://eprijournal.com/wp-content/uploads/2024/07/2024.06-EJ_AS740879878.jpg" alt="Orbital Solar Arrays" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // ORBITAL</span>
-                            <h3>Geosynchronous Solar Arrays</h3>
-                            <p>Surface solar panels are bottlenecked by weather and atmospheric scattering. A Type 1 civilization deploys massive photovoltaic arrays in geosynchronous orbit. Basking in uninterrupted, 24/7 solar radiation, these arrays beam colossal amounts of energy back to terrestrial rectenna grids via highly focused microwave frequencies.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Uptime</span><span class="spec-value data-mono">99.99% (No Night Cycle)</span></div>
-                                <div class="spec-row"><span class="spec-label">Transmission Loss</span><span class="spec-value data-mono">&lt; 2.5%</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Concept 2: Piezoelectric Harvest -->
-                    <div class="fluent-glass-panel concept-card reverse-layout">
-                        <div class="concept-media">
-                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*ArCAU07fYixkapWXTx4F4Q.jpeg" alt="Kinetic City Floor" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">02 // KINETIC</span>
-                            <h3>Piezoelectric Urban Surfaces</h3>
-                            <p>Every square meter of the civic footprint becomes an active generator. High-footfall pedestrian plazas, autonomous transit corridors, and structural foundation dampers are embedded with piezoelectric metamaterials, instantly converting the ambient kinetic friction of the bustling metropolis into usable grid electricity.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Harvest Source</span><span class="spec-value data-mono">Ambient Civic Friction</span></div>
-                                <div class="spec-row"><span class="spec-label">Output Scalability</span><span class="spec-value data-mono">Directly to Population</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Concept 3: Geothermal Taps -->
-                    <div class="fluent-glass-panel concept-card">
-                        <div class="concept-media">
-                            <img src="https://cms.interestingengineering.com/wp-content/uploads/2025/05/Thumbnails-for-IE-articles-Geothermal-Power-Plant.jpg" alt="Geothermal Energy" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">03 // SUBTERRANEAN</span>
-                            <h3>Deep Mantle Geothermal Taps</h3>
-                            <p>To provide an unbreakable baseload power supply, advanced drilling robotics penetrate deeply into the Earth's crust, tapping directly into mantle heat dynamics. Closed-loop, super-critical CO2 turbines use this extreme thermal differential to generate massive megawattage entirely independent of surface conditions.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Baseload Stability</span><span class="spec-value data-mono">Absolute (100%)</span></div>
-                                <div class="spec-row"><span class="spec-label">Fuel Requirement</span><span class="spec-value data-mono">Zero</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Concept 4: Solid State Fusion -->
-                    <div class="fluent-glass-panel concept-card reverse-layout">
-                        <div class="concept-media">
-                            <img src="https://www.rgs.org/media/k1lj1yz4/raymond-zhang-terrace-ep24.jpeg" alt="Fusion Core" loading="lazy">
-                            <div class="concept-media-overlay"></div>
-                        </div>
-                        <div class="concept-details">
-                            <span class="spec-label highlight-text mb-2" style="display:block;">04 // DECENTRALIZED</span>
-                            <h3>District Micro-Fusion Nodes</h3>
-                            <p>Vulnerable, monolithic power plants are replaced by a decentralized mesh of magnetic-confinement micro-fusion reactors embedded at the district level. Utilizing abundant hydrogen isotopes extracted from seawater, these nodes provide clean, virtually limitless peak power with zero risk of meltdown or long-lived radioactive waste.</p>
-                            <div class="concept-specs">
-                                <div class="spec-row"><span class="spec-label">Fuel Source</span><span class="spec-value data-mono">Deuterium (Seawater)</span></div>
-                                <div class="spec-row"><span class="spec-label">Carbon Footprint</span><span class="spec-value data-mono">0.00%</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+            <button id="close-energy-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
         </div>
+
+        <!-- Scrollable Content Body (ADDED onscroll trigger for Marquee) -->
+        <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
+            
+            <div class="framework-intro">
+                <p class="framework-desc">To achieve Kardashev Type 1 status, a civilization must capture and utilize the total energy output available on its home planet. This requires entirely decommissioning centralized, combustion-based grids and deploying a decentralized, zero-emission, multi-tiered harvesting matrix covering the surface, subterranean depths, and orbital space.</p>
+            </div>
+
+            <!-- Fluent AI Audit Box -->
+            <div class="ai-audit-container fluent-glass-panel">
+                <div class="audit-header">
+                    <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                    <span class="audit-title-text">AI Audit</span>
+                    <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                        <i class="fa-solid fa-bolt"></i> Run Analysis
+                    </button>
+                </div>
+                <div class="audit-content hidden"></div>
+            </div>
+
+            <div class="concept-cards-wrapper">
+                
+                <!-- Concept 1: Orbital Solar -->
+                <div class="fluent-glass-panel concept-card">
+                    <div class="concept-media">
+                        <img src="https://eprijournal.com/wp-content/uploads/2024/07/2024.06-EJ_AS740879878.jpg" alt="Orbital Solar Arrays" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">01 // ORBITAL</span>
+                        <h3>Geosynchronous Solar Arrays</h3>
+                        <p>Surface solar panels are bottlenecked by weather and atmospheric scattering. A Type 1 civilization deploys massive photovoltaic arrays in geosynchronous orbit. Basking in uninterrupted, 24/7 solar radiation, these arrays beam colossal amounts of energy back to terrestrial rectenna grids via highly focused microwave frequencies.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Uptime</span><span class="spec-value data-mono">99.99% (No Night Cycle)</span></div>
+                            <div class="spec-row"><span class="spec-label">Transmission Loss</span><span class="spec-value data-mono">&lt; 2.5%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 2: Piezoelectric Harvest -->
+                <div class="fluent-glass-panel concept-card reverse-layout">
+                    <div class="concept-media">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*ArCAU07fYixkapWXTx4F4Q.jpeg" alt="Kinetic City Floor" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">02 // KINETIC</span>
+                        <h3>Piezoelectric Urban Surfaces</h3>
+                        <p>Every square meter of the civic footprint becomes an active generator. High-footfall pedestrian plazas, autonomous transit corridors, and structural foundation dampers are embedded with piezoelectric metamaterials, instantly converting the ambient kinetic friction of the bustling metropolis into usable grid electricity.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Harvest Source</span><span class="spec-value data-mono">Ambient Civic Friction</span></div>
+                            <div class="spec-row"><span class="spec-label">Output Scalability</span><span class="spec-value data-mono">Directly to Population</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 3: Geothermal Taps -->
+                <div class="fluent-glass-panel concept-card">
+                    <div class="concept-media">
+                        <img src="https://cms.interestingengineering.com/wp-content/uploads/2025/05/Thumbnails-for-IE-articles-Geothermal-Power-Plant.jpg" alt="Geothermal Energy" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">03 // SUBTERRANEAN</span>
+                        <h3>Deep Mantle Geothermal Taps</h3>
+                        <p>To provide an unbreakable baseload power supply, advanced drilling robotics penetrate deeply into the Earth's crust, tapping directly into mantle heat dynamics. Closed-loop, super-critical CO2 turbines use this extreme thermal differential to generate massive megawattage entirely independent of surface conditions.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Baseload Stability</span><span class="spec-value data-mono">Absolute (100%)</span></div>
+                            <div class="spec-row"><span class="spec-label">Fuel Requirement</span><span class="spec-value data-mono">Zero</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 4: Solid State Fusion -->
+                <div class="fluent-glass-panel concept-card reverse-layout">
+                    <div class="concept-media">
+                        <img src="https://www.rgs.org/media/k1lj1yz4/raymond-zhang-terrace-ep24.jpeg" alt="Fusion Core" loading="lazy">
+                        <div class="concept-media-overlay"></div>
+                    </div>
+                    <div class="concept-details">
+                        <span class="spec-label highlight-text mb-2" style="display:block;">04 // DECENTRALIZED</span>
+                        <h3>District Micro-Fusion Nodes</h3>
+                        <p>Vulnerable, monolithic power plants are replaced by a decentralized mesh of magnetic-confinement micro-fusion reactors embedded at the district level. Utilizing abundant hydrogen isotopes extracted from seawater, these nodes provide clean, virtually limitless peak power with zero risk of meltdown or long-lived radioactive waste.</p>
+                        <div class="concept-specs">
+                            <div class="spec-row"><span class="spec-label">Fuel Source</span><span class="spec-value data-mono">Deuterium (Seawater)</span></div>
+                            <div class="spec-row"><span class="spec-label">Carbon Footprint</span><span class="spec-value data-mono">0.00%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
+</div>
 
 
 
@@ -832,11 +874,23 @@
                 <button id="close-waste-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
             </div>
 
-            <!-- Scrollable Content Body -->
-            <div class="framework-body custom-scroll" data-lenis-prevent>
+            <!-- Scrollable Content Body (ADDED onscroll trigger for Marquee) -->
+            <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
                 
                 <div class="framework-intro">
                     <p class="framework-desc">In a Type 1 Civilization, the concept of "waste" is mathematically eliminated. The urban ecosystem operates on a flawless, closed-loop circular economy where every byproduct is instantly cataloged, deconstructed, and upcycled into raw operational material. Landfills are obsolete.</p>
+                </div>
+
+                <!-- Fluent AI Audit Box -->
+                <div class="ai-audit-container fluent-glass-panel">
+                    <div class="audit-header">
+                        <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                        <span class="audit-title-text">AI Audit</span>
+                        <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                            <i class="fa-solid fa-bolt"></i> Run Analysis
+                        </button>
+                    </div>
+                    <div class="audit-content hidden"></div>
                 </div>
 
                 <div class="concept-cards-wrapper">
@@ -919,7 +973,7 @@
 
 
 
-    <!-- ==========================================
+ <!-- ==========================================
          TYPE 1 ECOLOGY FRAMEWORK MODAL
          ========================================== -->
     <div id="vertical-modal" class="fluent-framework-modal">
@@ -934,11 +988,23 @@
                 <button id="close-vertical-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close Framework</button>
             </div>
 
-            <!-- Scrollable Content Body -->
-            <div class="framework-body custom-scroll" data-lenis-prevent>
+            <!-- Scrollable Content Body (ADDED onscroll trigger for Marquee) -->
+            <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
                 
                 <div class="framework-intro">
                     <p class="framework-desc">A Type 1 Civilization does not pave over the natural world; it merges with it. Megacities act as living, breathing extensions of the global biosphere. By weaving synthetic biology and structural arboriculture directly into the civic framework, urban centers become massive carbon sinks, micro-climate regulators, and sanctuaries for planetary biodiversity.</p>
+                </div>
+
+                <!-- Fluent AI Audit Box -->
+                <div class="ai-audit-container fluent-glass-panel">
+                    <div class="audit-header">
+                        <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                        <span class="audit-title-text">AI Audit</span>
+                        <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                            <i class="fa-solid fa-bolt"></i> Run Analysis
+                        </button>
+                    </div>
+                    <div class="audit-content hidden"></div>
                 </div>
 
                 <div class="concept-cards-wrapper">
@@ -1016,6 +1082,55 @@
 
         </div>
     </div>
+
+
+
+
+<!-- ==========================================
+   ASTERION FLUENT AUDIT MODAL
+   ========================================== -->
+<div class="modal-overlay" id="audit-modal">
+    <div class="modal-content" style="max-width: 520px;">
+        <div class="modal-header">
+            <h3><i class="ph-fill ph-shield-check"></i> System Audit & Diagnostics</h3>
+            <button class="icon-btn" onclick="closeAuditModal()"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <div class="modal-body" id="audit-body">
+            <p>Verify session memory consistency, context drift, and vector integrity across local knowledge bases.</p>
+            
+            <div class="audit-metrics-grid">
+                <div class="metric-glass">
+                    <i class="ph ph-database"></i>
+                    <div class="m-data">
+                        <span class="m-label">Vector Vault</span>
+                        <span class="m-value" id="audit-val-vault">Synchronized</span>
+                    </div>
+                </div>
+                <div class="metric-glass">
+                    <i class="ph ph-brain"></i>
+                    <div class="m-data">
+                        <span class="m-label">Context Drift</span>
+                        <span class="m-value" id="audit-val-drift">0.00%</span>
+                    </div>
+                </div>
+                <div class="metric-glass full-width" id="audit-progress-container">
+                    <span class="m-label">Diagnostic Sequence</span>
+                    <div class="fluent-progress-track">
+                        <div class="fluent-progress-fill" id="audit-progress"></div>
+                    </div>
+                    <span class="m-status" id="audit-status-text">Awaiting Initialization...</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="btn-primary" id="run-audit-btn" onclick="executeAudit()">Run Diagnostics</button>
+        </div>
+    </div>
+</div>
+
+
 
 
 <!-- ==========================================
