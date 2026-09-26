@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJS | Posts</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="posts.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="posts-body">
+
+    <!-- Fluid Ambient Gradient Mesh[cite: 35] -->
+    <div class="posts-gradient-mesh">
+        <div class="mesh-orb orb-orange"></div>
+        <div class="mesh-orb orb-aqua"></div>
+        <div class="mesh-orb orb-indigo"></div>
+    </div>
+
+    <!-- Infinite Parallax Scroll Waves -->
+    <div class="fluent-scroll-waves">
+        <div class="wave-wrapper wave-wrapper-1">
+            <div class="fluent-wave wave-1"></div>
+        </div>
+        <div class="wave-wrapper wave-wrapper-2">
+            <div class="fluent-wave wave-2"></div>
+        </div>
+        <div class="wave-wrapper wave-wrapper-3">
+            <div class="fluent-wave wave-3"></div>
+        </div>
+    </div>
+
+    <header class="fixed-nav-wrapper" id="main-nav">
+        <div class="top-nav">
+            <!-- Added ID here to trigger the expansion -->
+            <div class="brand-identity-pill" id="identity-pill-btn" title="View OS Profile">
+                <div class="fluid-logo-wrapper">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGxFkB2b_BjmQ/profile-displayphoto-crop_800_800/B4DZ9B3YdOIIAI-/0/1783516469539?e=1792022400&v=beta&t=iNt9RgJ4TFFDMj4qhNzV8tvypxitpsTuvK3jNiQjuls"
+                        alt="SJS Logo">
+                </div>
+                <span class="fluent-nameplate-text data-mono">SJS</span>
+            </div>
+
+            <nav class="nav-pills">
+                <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="posts.html" class="nav-item active"><i class="fa-solid fa-plus"></i> Posts</a>
+                <a class="nav-item locked-item"><i class="fa-solid fa-suitcase"></i> Work</a>
+                <a class="nav-item locked-item"><i class="fa-solid fa-plug"></i> Connect</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="fluent-clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display" class="data-mono">03:00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Safely Nested Polymorphic Profile Expansion -->
+        <div class="nav-profile-expansion" id="nav-expansion">
+            <div class="expansion-content-wrapper">
+                <div class="expansion-layout">
+
+                    <div class="expansion-user-info">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGxFkB2b_BjmQ/profile-displayphoto-crop_800_800/B4DZ9B3YdOIIAI-/0/1783516469539?e=1792022400&v=beta&t=iNt9RgJ4TFFDMj4qhNzV8tvypxitpsTuvK3jNiQjuls"
+                            alt="Satyam Jyoti Samal" class="expansion-avatar">
+                        <div>
+                            <h3 class="expansion-name">Satyam Jyoti Samal</h3>
+                            <span class="fluent-badge data-mono" style="margin-top: 4px;">SYS_ADMIN</span>
+                        </div>
+                    </div>
+
+                    <div class="expansion-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">STATUS</span>
+                            <span class="spec-value data-mono"
+                                style="color:#10b981; text-shadow: 0 0 8px rgba(16,185,129,0.4);"><i
+                                    class="fa-solid fa-circle-dot"
+                                    style="font-size: 0.6rem; margin-right: 4px;"></i>ONLINE</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">AGE</span>
+                            <span class="spec-value data-mono" id="dynamic-age">Initializing...</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">ROLE</span>
+                            <span class="spec-value data-mono">CSE (Cyber Security) Undergrad @ ITER</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">CORE_STACK</span>
+                            <span class="spec-value data-mono">C, Python, Java</span>
+                        </div>
+                    </div>
+
+                    <button id="close-expansion" class="glass-icon-btn" title="Collapse Panel"><i
+                            class="fa-solid fa-chevron-up"></i></button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-scroll-progress-track">
+            <div id="nav-scroll-progress-bar" class="nav-scroll-progress-bar"></div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Detached Fluent Scrollbar -->
+    <div class="custom-scroll-track">
+        <div class="custom-scroll-thumb" id="scroll-thumb">
+            <div class="thumb-glow"></div>
+        </div>
+        <button class="ac-return-top" id="ac-return-top" title="Return to Origin">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Middle-Click Auto-Scroll HUD -->
+    <div class="uniq-autoscroll-hud" id="autoscroll-hud">
+        <i class="fa-solid fa-chevron-up dir-up"></i>
+        <div class="hud-center-dot"></div>
+        <i class="fa-solid fa-chevron-down dir-down"></i>
+    </div>
+
+    <div class="app-container posts-container">
+
+        <!-- Hero Section[cite: 35] -->
+        <section class="posts-hero">
+            <div class="fluent-badge mb-4"><i class="fa-solid fa-terminal"></i> SYSTEM_LOGS</div>
+
+            <h1 class="hero-typography">Developer Logs.<br><span class="text-gradient">Architecture Notes.</span></h1>
+
+            <div class="fluent-glass-panel problem-statement-card">
+                <div class="ps-image-container">
+                    <img src="https://cdn.theatlantic.com/thumbor/VE4VvyBfK3ZBCKUdP5I72hf5SIY=/0x0:2000x1125/960x540/media/img/mt/2019/10/Matrix/original.gif"
+                        alt="Code Workspace" loading="lazy">
+                    <div class="ps-image-overlay"></div>
+                </div>
+
+                <div class="ps-content">
+                    <div class="tech-paragraph">
+                        <span class="prompt-arrow">&gt;</span>
+                        <p>This page serves as the developer's insight and important posts.</p>
+                    </div>
+                    <div class="tech-paragraph">
+                        <span class="prompt-arrow">&gt;</span>
+                        <p>Engineering requires understading and fun, we can expect some great mysteries here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posts Grid[cite: 35] -->
+        <section class="solutions-section">
+            <div class="fluent-clean-header">
+                <h2>[ ARCHIVE_ENTRIES ]</h2>
+                <p>Strategic engineering and design methodologies.</p>
+            </div>
+
+            <div class="solutions-grid">
+
+                <!-- Post 1 -->
+                <div class="fluent-glass-panel solution-card">
+                    <div class="card-media-banner">
+                        <img src="https://wallpapershome.com/images/pages/pic_h/5406.jpg" alt="Hello_World"
+                            loading="lazy">
+                        <div class="media-gradient-overlay"></div>
+                        <div class="solution-header-floating">
+                            <div class="solution-icon"><i class="fa-solid fa-file"></i></div>
+                            <span class="solution-number">01</span>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3>Hello, World!</h3>
+                        <div
+                            style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 14px;">
+                            <div class="status-pill problem-pill" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-plus"></i> First Post
+                            </div>
+
+                            <div class="status-pill problem-pill-green" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-calendar"></i> 23-09-2026
+                            </div>
+                        </div>
+                        <p>A "Hello, World!" program is a simple computer code that displays the message "Hello, world!"
+                            on a screen.</p>
+
+                        <button id="post1-modal-btn" class="solution-link"
+                            style="background: none; border: none; cursor: pointer; font-family: inherit;">
+                            Read Log <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+                
+
+
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ==========================================
+         FULL SCREEN POST MODAL (Template)[cite: 35]
+         ========================================== -->
+    <div id="post1-modal" class="fluent-framework-modal">
+        <div class="framework-glass-surface">
+
+            <div class="framework-header">
+                <div class="header-titles">
+                    <span class="fluent-badge fb-modal tb"><i class="fa-solid fa-plus"></i> Detailed Post</span>
+                    <h2>Hello, World!</h2>
+                </div>
+                <button id="close-post1-modal" class="glass-btn-secondary"><i class="fa-solid fa-xmark"></i> Close
+                    Log</button>
+            </div>
+
+            <div class="framework-body custom-scroll" data-lenis-prevent onscroll="handleModalScroll(this)">
+
+                <div class="framework-intro">
+                    <p class="framework-desc">A "Hello, World!" program is a simple computer code that displays the
+                        message "Hello, world!" on a screen.</p>
+                </div>
+
+                <div class="ai-audit-container fluent-glass-panel">
+                    <div class="audit-header">
+                        <i class="fa-solid fa-microchip ai-pulse-icon"></i>
+                        <span class="audit-title-text">System Compiler</span>
+                        <button class="glass-btn-secondary btn-small start-audit-btn" onclick="runFrameworkAudit(this)">
+                            <i class="fa-solid fa-bolt"></i> Run Build
+                        </button>
+                    </div>
+                    <div class="audit-content hidden"></div>
+                </div>
+
+                <div class="concept-cards-wrapper">
+                    <div class="fluent-glass-panel concept-card">
+                        <div class="concept-media">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Hello_World_Brian_Kernighan_1978.jpg/960px-Hello_World_Brian_Kernighan_1978.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+                                alt="Code Engine" loading="lazy">
+                            <div class="concept-media-overlay"></div>
+                        </div>
+                        <div class="concept-details">
+                            <span class="spec-label highlight-text mb-2" style="display:block;">01 // Universal
+                                Introduction</span>
+                            <h3>Origin of Hello, World!</h3>
+                            <p>While several small test programs have existed since the development of programmable
+                                computers, the tradition of using the phrase "Hello, world" as a test message was
+                                influenced by an example program in the 1978 book The C Programming Language, with
+                                likely earlier use in BCPL. The example program from the book prints "hello, world", and
+                                was inherited from a 1974 Bell Laboratories internal memorandum by Brian Kernighan,
+                                Programming in C: A Tutorial.</p>
+                            <div class="concept-specs">
+                                <div class="spec-row"><span class="spec-label">Latency</span><span
+                                        class="spec-value data-mono">0.4ms</span></div>
+                                <div class="spec-row"><span class="spec-label">Engine</span><span
+                                        class="spec-value data-mono">Vanilla C++17</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Duplicate the above modal structure for post2-modal and post3-modal -->
+
+    <script src="post.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

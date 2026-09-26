@@ -3,192 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus 11 | Enterprise Analytics</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <title>SJS | Home</title>
+    <!-- Navigation Styles -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Base & Landing Page Styles -->
+    <link rel="stylesheet" href="index.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lenis Library for Inertia Scrolling -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/N11-logo.ico">
 </head>
 <body>
 
-    <!-- Layer 1: Parallax Image -->
-    <div id="parallax-backdrop"></div>
+    <!-- Ambient Background -->
+<div class="ambient-gradient-bg"></div>
+<!-- Tiny Moving Square Grid -->
+<div class="moving-grid-overlay"></div>
     
-    <!-- Layer 1.5: Volumetric Godrays -->
-    <div class="godray-container">
-        <div class="godray ray-1"></div>
-        <div class="godray ray-2"></div>
-        <div class="godray ray-3"></div>
-    </div>
-    
-    <!-- Layer 2: Abstract Mesh Overlay -->
-    <div class="animated-fallback-mesh"></div>
-    
-    <!-- Layer 3: Vignette Edge Darkening -->
-    <div class="vignette-overlay"></div>
 
-
-    <!-- Full-Width Fixed Navigation -->
-<header class="fixed-nav-wrapper">
+<header class="fixed-nav-wrapper" id="main-nav">
         <div class="top-nav">
-            <div class="brand-logo">
-                <!-- Replace src with your actual transparent logo file -->
-                <img src="assets/N11-logo.png" alt="Nexus 11" class="brand-logo-img">
-                <span>Nexus 11</span>
+            <!-- Added ID here to trigger the expansion -->
+            <div class="brand-identity-pill" id="identity-pill-btn" title="View OS Profile">
+                <div class="fluid-logo-wrapper">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGxFkB2b_BjmQ/profile-displayphoto-crop_800_800/B4DZ9B3YdOIIAI-/0/1783516469539?e=1792022400&v=beta&t=iNt9RgJ4TFFDMj4qhNzV8tvypxitpsTuvK3jNiQjuls" alt="SJS Logo">
+                </div>
+                <span class="fluent-nameplate-text data-mono">SJS</span>
             </div>
+            
             <nav class="nav-pills">
-                <a class="active"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="sdg_11.html"><i class="fa-solid fa-city"></i> SDG_11</a>
-                <a href="ideas.html"><i class="fa-solid fa-lightbulb"></i> Ideas</a>
-                <a href="metrics.html"><i class="fa-solid fa-chart-line"></i> Metrics</a>
+                <a href="index.html" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href ="posts.html" class="nav-item"><i class="fa-solid fa-plus"></i> Posts</a>
+                <a class="nav-item locked-item"><i class="fa-solid fa-suitcase"></i> Work</a>
+                <a class="nav-item locked-item"><i class="fa-solid fa-plug"></i> Connect</a>
             </nav>
+            
             <div class="nav-actions">
-                <!-- Fluent Glass Clock -->
                 <div class="fluent-clock">
                     <i class="fa-regular fa-clock"></i>
-                    <span id="time-display" class="data-mono">00:00:00</span>
+                    <span id="time-display" class="data-mono">03:00:00</span>
                 </div>
             </div>
+        </div>
+
+                <!-- Safely Nested Polymorphic Profile Expansion -->
+        <div class="nav-profile-expansion" id="nav-expansion">
+            <div class="expansion-content-wrapper">
+                <div class="expansion-layout">
+                    
+                    <div class="expansion-user-info">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGxFkB2b_BjmQ/profile-displayphoto-crop_800_800/B4DZ9B3YdOIIAI-/0/1783516469539?e=1792022400&v=beta&t=iNt9RgJ4TFFDMj4qhNzV8tvypxitpsTuvK3jNiQjuls" alt="Satyam Jyoti Samal" class="expansion-avatar">
+                        <div>
+                            <h3 class="expansion-name">Satyam Jyoti Samal</h3>
+                            <span class="fluent-badge data-mono" style="margin-top: 4px;">Public Profile</span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="expansion-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">STATUS</span>
+                            <span class="spec-value data-mono" style="color:#10b981; text-shadow: 0 0 8px rgba(16,185,129,0.4);"><i class="fa-solid fa-circle-dot" style="font-size: 0.6rem; margin-right: 4px;"></i>ONLINE</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">AGE</span>
+                            <span class="spec-value data-mono" id="dynamic-age">Initializing...</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">ROLE</span>
+                            <span class="spec-value data-mono">CSE (Cyber Security) Undergrad @ ITER</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">CORE_STACK</span>
+                            <span class="spec-value data-mono">C, Python, Java</span>
+                        </div>
+                    </div>
+                    
+                    <button id="close-expansion" class="glass-icon-btn" title="Collapse Panel"><i class="fa-solid fa-chevron-up"></i></button>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="nav-scroll-progress-track">
+            <div id="nav-scroll-progress-bar" class="nav-scroll-progress-bar"></div>
         </div>
     </header>
 
+
+
+
+    <!-- Detached Fluent Scrollbar -->
+    <div class="custom-scroll-track">
+        <div class="custom-scroll-thumb" id="scroll-thumb">
+            <div class="thumb-glow"></div>
+        </div>
+        <button class="ac-return-top" id="ac-return-top" title="Return to Origin">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Middle-Click Auto-Scroll HUD -->
+    <div class="uniq-autoscroll-hud" id="autoscroll-hud">
+        <i class="fa-solid fa-chevron-up dir-up"></i>
+        <div class="hud-center-dot"></div>
+        <i class="fa-solid fa-chevron-down dir-down"></i>
+    </div>
+
+
+
+
+
+
+
+
     <div class="app-container">
-        <!-- Hero Section (100vh) -->
-        <div class="hero-wrapper">
-            
-            <!-- Relocated Top-Left Scroll Indicator (Fluent Drop) -->
-            <div class="hero-top-left-scroll">
-                <div class="scroll-pill fluent-glass-panel">
-                    <div class="scroll-drop-node">
-                        <div class="scroll-drop-dot"></div>
-                    </div>
-                    <span>SCROLL DOWN</span>
+        
+        <!-- Hero Section -->
+        <main class="hero-split-section">
+            <div class="hero-left-column reveal-on-scroll">
+                <div class="pill-badge">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Satyam Jyoti Samal
                 </div>
+                <h1 class="hero-massive-text">
+                    Aspiring<br>
+                    Engineer &<br>
+                    Scientist
+                </h1>
             </div>
 
-            <main class="hero-section">
-                <div class="fluent-badge mb-4">Infrastructure Intelligence</div>
-                <h1 class="hero-typography">
-                    Sustainable Cities.
-                    <br><span class="text-gradient">Zero-Loss Resilience.</span>
-                </h1>
-
-                <p class="hero-subtext">Predictive modeling for urban expansion and equitable living. A seamless, real-time analytics engine built for the modern grid.</p>
-            </main>
-
-            <!-- Bottom shelf cleaned up -->
-            <footer class="bottom-shelf" style="display: none;"></footer>
-        </div>
-
-        <!-- Expanded Analytics Content -->
-        <div class="fluent-seamless-wrapper">
-            <div class="fluent-ambient-light light-1"></div>
-            <div class="fluent-ambient-light light-2"></div>
-<!-- ==========================================
-                 CIVIC VECTOR BLUEPRINTS (FULL WIDTH)
-                 ========================================== -->
-            <section class="fluent-smooth-section vector-blueprint-section">
-                <div class="fluent-clean-header" style="margin-bottom: 40px;">
-                    <h2>Civic Infrastructure Schematics</h2>
-                    <p>High-fidelity, hardware-accelerated vector mapping of planetary grids.</p>
-                </div>
-
-                <!-- Non-rounded, edge-to-edge, non-interactive panel -->
-                <div class="fluent-glass-panel vector-panel">
-                    <div class="vector-strip">
-                        <!-- Abstract Structural Vectors -->
-                        <img src="https://cdn.pixabay.com/photo/2026/06/20/14/41/mohamed_hassan-jungle-10341915_640.png" alt="Node Alpha">
-                        <img src="https://cdn.vectorstock.com/i/500p/55/79/night-city-skyline-vector-8255579.jpg" alt="Node Beta">
-                        <img src="https://img.magnific.com/free-vector/desert-canyon-road-sunset_1308-165502.jpg?semt=ais_hybrid&w=740&q=80" alt="Node Gamma">
-                        <img src="https://img.magnific.com/free-vector/modern-night-city-landscape-vector-background_1441-2835.jpg?semt=ais_hybrid&w=740&q=80" alt="Node Delta">
-                    </div>
-                    <!-- Smooth fade blending the edges into the background -->
-                    <div class="vector-fade-edges"></div>
-                </div>
-            </section>
-
-            <section class="fluent-smooth-section">
-                <div class="fluent-clean-header">
-                    <h2>Telemetry Pipeline</h2>
-                    <p>High-fidelity data aggregation and real-time synthesis.</p>
-                </div>
-
-                <div class="fluent-card-grid">
-                    <div class="fluent-glass-panel arch-card">
-                        <div class="clean-icon">01</div>
-                        <h4>Global Ingestion</h4>
-                        <p>Extraction of atmospheric and transit vectors from Copernicus and Open-Meteo arrays.</p>
-                    </div>
-                    <div class="fluent-glass-panel arch-card">
-                        <div class="clean-icon">02</div>
-                        <h4>Data Processing</h4>
-                        <p>Backend analytics pipeline engineered to clean, interpolate, and format raw JSON telemetry.</p>
-                    </div>
-                    <div class="fluent-glass-panel arch-card">
-                        <div class="clean-icon">03</div>
-                        <h4>SQL Aggregation</h4>
-                        <p>Relational database architecture built to store and analyze historical performance targets.</p>
-                    </div>
-                </div>
-            </section>
-
-<!-- Full-Width Fluent Footer -->
-        <footer class="fluent-master-footer">
-            <div class="footer-inner-content">
-                
-                <!-- Left: Branding & Core Info -->
-                <div class="footer-brand-column">
-                    <div class="brand-logo" style="margin-bottom: 12px;">
-                        <img src="assets/N11-logo.png" alt="Nexus 11 Logo" class="brand-logo-img">
-                        <span>Nexus 11</span>
-                    </div>
-                    <p class="footer-tagline">Advanced urban telemetry and SDG 11 infrastructure intelligence engine built for sustainable civic scaling.</p>
-                    <div class="footer-version data-mono">SYSTEM_ONLINE // SDG_11</div>
-                </div>
-
-                <!-- Right: All Four Ecosystem Logos -->
-                <div class="footer-ecosystem-column">
-                    <div class="ecosystem-group">
-                        <span class="ecosystem-label">Ecosystem Partners</span>
-                        <div class="logo-badge-grid">
-                            <!-- AICTE Badge -->
-                            <div class="fluent-glass-panel partner-badge" title = "AICTE">
-                                <img src="assets/aicte-logo.png" alt="AICTE" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span class="badge-text data-mono fallback-text">AICTE</span>
-                            </div>
-                            <!-- IBM SkillsBuild Badge -->
-                            <div class="fluent-glass-panel partner-badge" title = "IBM SkillsBuild">
-                                <img src="assets/ibm-skillsbuild-logo.png" alt="IBM SkillsBuild" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span class="badge-text data-mono fallback-text">IBM SkillsBuild</span>
-                            </div>
-                            <!-- 1M1B Badge -->
-                            <div class="fluent-glass-panel partner-badge" title = "1M1B">
-                                <img src="assets/1m1b-logo.png" alt="1M1B" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span class="badge-text data-mono fallback-text">1M1B</span>
-                            </div>
+            <div class="hero-right-column reveal-on-scroll" style="transition-delay: 150ms;">
+                <p class="hero-description">
+                    Redefining technologies for brighter future, clean & green energy efficiency, ~0% carbon emission. Where we plug technologies and nature together.
+                </p>
+                <div class="hero-action-row">
+                    <button class="solid-white-btn">Read More</button>
+                    <div class="trust-indicator">
+                        <div class="avatar-stack">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xgsMVT2IijB7ZMSkM98cweJE5WtzLdr_kkoiFwiaPsBhmFBJplE2VCF8&s=10" alt="Avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xgsMVT2IijB7ZMSkM98cweJE5WtzLdr_kkoiFwiaPsBhmFBJplE2VCF8&s=10" alt="Avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xgsMVT2IijB7ZMSkM98cweJE5WtzLdr_kkoiFwiaPsBhmFBJplE2VCF8&s=10" alt="Avatar">
+                        </div>
+                        <div class="trust-score">
+                            <i class="fa-solid fa-star text-gold"></i>
+                            <span>4.9 Trust Score</span>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </footer>
-    </div>
+        </main>
 
-    <!-- Premium Auth Modal -->
-    <div id="api-modal" class="modal-overlay">
-        <div class="fluent-glass-panel modal-panel">
-            <h3>Authenticate Engine</h3>
-            <p>Connect your analytics key to enable live generative processing.</p>
-            <input type="password" id="api-key-input" class="glass-input" placeholder="API Key..." autocomplete="off">
-            <div class="modal-actions">
-                <button id="cancel-api" class="glass-btn-secondary">Cancel</button>
-                <button id="save-api" class="glass-btn-primary">Authorize</button>
+        <!-- C++ Core & Architecture Section -->
+<section id="engine" class="content-section">
+    <div class="section-header reveal-on-scroll">
+        <h2 class="section-title">Top Projects & Theories</h2>
+        <p class="section-subtitle">PoW (Proof of Work) indicating the implementations of SDGs and further. Visit the work tab to know more!</p>
+    </div>
+    
+    <div class="bento-grid">
+        <!-- Card 1: Memory -->
+        <div class="glass-card interactive-card reveal-on-scroll">
+            <div class="card-top-row">
+                <div class="card-icon"><i class="fa-solid fa-file"></i></div>
+                <div class="card-metric data-mono"><i class="fa-solid fa-circle-notch fa-spin text-gold"></i> Active</div>
+            </div>
+            <h3 class="card-title">Nexus 11</h3>
+            <p class="card-desc">A powerful project satisfying SDG_11. Completed under the supervision of AICTE, IBM & 1M1B.</p>
+            <div class="card-tags data-mono">
+                <span><i class="fa-brands fa-github"></i></span>
+                <span><i class="fa-brands fa-cloudflare"></i></span>
+                <span><i class="fa-brands fa-linkedin"></i></span>
+            </div>
+            <div class="fluid-data-track">
+                <div class="fluid-data-fill" style="width: 94%;"></div>
+            </div>
+        </div>
+        
+        <!-- Card 2: Multithreading -->
+        <div class="glass-card interactive-card reveal-on-scroll" style="transition-delay: 100ms;">
+            <div class="card-top-row">
+                <div class="card-icon"><i class="fa-solid fa-file"></i></div>
+                <div class="card-metric data-mono"><i class="fa-solid fa-circle-notch fa-spin text-gold"></i> Active</div>
+            </div>
+            <h3 class="card-title">Asterion AI</h3>
+            <p class="card-desc">A scientific AI designed specific for STEM and research field. Escalate your Science-Skills by visiting Asterion!</p>
+            <div class="card-tags data-mono">
+                <span><i class="fa-brands fa-github"></i></span>
+                <span><i class="fa-brands fa-cloudflare"></i></span>
+                <span><i class="fa-brands fa-google"></i></span>
+            </div>
+            <div class="fluid-data-track">
+                <div class="fluid-data-fill" style="width: 88%;"></div>
+            </div>
+        </div>
+
+        <!-- Card 3: WebGL -->
+        <div class="glass-card interactive-card reveal-on-scroll" style="transition-delay: 200ms;">
+            <div class="card-top-row">
+                <div class="card-icon"><i class="fa-solid fa-file"></i></div>
+                <div class="card-metric data-mono">Under-Development</div>
+            </div>
+            <h3 class="card-title">Untitled Project</h3>
+            <p class="card-desc">Ultimate hub of metaverse and highlevel corporate applications dynamically scaling up by the implementation of AI.</p>
+            <div class="card-tags data-mono">
+                <span><i class="fa-brands fa-meta"></i></span>
+                <span><i class="fa-brands fa-google"></i></span>
+                <span><i class="fa-brands fa-cloudflare"></i></span>
+            </div>
+            <div class="fluid-data-track">
+                <div class="fluid-data-fill" style="width: 10%;"></div>
             </div>
         </div>
     </div>
+</section>
 
-    <script src="script.js"></script>
+        <!-- New: Projects & Interfaces Section -->
+        <section id="projects" class="content-section">
+            <div class="section-header reveal-on-scroll">
+                <h2 class="section-title">Unified Solutions</h2>
+                <p class="section-subtitle">We work exclusively on real world problems and try to solve them using efficient solutions.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal-on-scroll">
+                    <div class="project-image" style="background-image: url('https://images.stockcake.com/public/a/1/5/a1545156-aa92-45e8-bdbf-11ba0921bdd4/sandstone-canyon-glow-stockcake.jpg');"></div>
+                    <div class="project-info">
+                        <span class="project-category data-mono">Safer Environment</span>
+                        <h3 class="project-name">Aura Designs</h3>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-on-scroll" style="transition-delay: 150ms;">
+                    <div class="project-image" style="background-image: url('https://nexus11.pages.dev/assets/fa.png');"></div>
+                    <div class="project-info">
+                        <span class="project-category data-mono">Safer Cities</span>
+                        <h3 class="project-name">Nexus Analytics</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- External Scripts -->
+    <script src="script.js"></script>  <!-- Global logic: Navbar, Scroll, Clock -->
+    <script src="index.js"></script>   <!-- Local logic: Scroll Reveals, Card Hovers -->
 </body>
 </html>
